@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS Navi mit Buttons</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h1>CSS Navi mit Buttons</h1>
+
+<p>Hier zunächst eine Liste mit Links, bei denen sich die Hintergrundfarbe über a:hover ändert:</p>
+
+<ul class="navi">
+	<li><a>Home</a></li>
+    <li><a href="info.html">Info</a></li>
+    <li><a href="kontakt.html">Kontakt</a></li>
+</ul>
+
+<h2>Vorgehensweise:</h2>
+
+<ul>
+	<li>1.) Zuerst algemeine Formatierung für die Liste, ihre enthaltenen Listenpunkte, sowie a-tags darin.<br>
+Schritweise alle Elemente mit Hintergrundfarbe hervorheben und die Größen, soweit erforderlich, bestimmen.<br><br></li>
+
+	<li>2.)Der hover-Effekt kann algemein für &lt;a&gt; bereits eingebaut werden, um die Verweise besser zu erkennen.<br><br></li>
+</ul>
+
+
+<p><strong>Nun im weiteren Schritt eine Liste mit individuellem Hintergrundbild für jeden verweis</strong></p>
+
+<ul class="navi">
+	<li><a class="home-aktiv">Home</a></li>
+    <li><a href="info.html" class="info">Info</a></li>
+    <li><a href="kontakt.html" class="kontakt">Kontakt</a></li>
+</ul>
+
+<ul>
+	<li>3.) Nach dem allgemeinen Teil, der für alle Elemente gleich ist, folgt nun der spezielle: Die a-tags erhalten nun per Klasse ihr eigenes Hintergrundbild, jeweils für den Normalzustand des Links und den hover zustand.<br><br></li>
+    
+    <li>4.) Als nächtes steht noch die Vergabe eines "aktiv-links" an , dh. die seite , auf der ich mich gerade befinde , soll in der Navigation besonders hervorgehoben werden.<br>
+    Hier zu jeweils eine Klasse definiert (hier z.b. home-aktiv), welche das andersfarbige Hintergrundbild liefert; die alte Klasse wird dazu im Element entfernt. Nun noch das Attribut <em>href</em> mit seiner Wertzuweisung heraus nehmen, damit der Mauszeiger nicht mehr zur Zeige-Hand wird.<br><br></li>
+    
+    <li>5.) Bevor Unterseiten erstellt werden, ist es nützlich , alle Verweise mit ihrem Link-Ziel zu versehen, um eine gute Kopier-Vorlage zu erhalten. nun die einzelnen Unterseiten anlegen.<br><br></li>
+</ul>
+
+</body>
+</html>

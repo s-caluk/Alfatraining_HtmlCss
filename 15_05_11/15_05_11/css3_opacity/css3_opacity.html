@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS3 opacity</title>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+	background-color:#F9FFA0;
+}
+
+h2 {
+	margin-bottom:30px;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+ul {
+	margin:0px 0px 30px 40px;
+}
+
+div#blau {
+	width:450px;
+	height:350px;
+	background-color:#2B43FF;
+}
+
+div#bildbox {
+	position:absolute;
+	top:350px;
+	left:200px;
+	width:500px;
+	border:20px solid #09CC37;
+}
+
+div#bildbox p img {
+	-moz-opacity:0.5;  /*Firefox*/
+	-webkit-opacity:0.5;  /*Webkit = Safari und Chrome*/
+	filter:alpha(opacity=50);  /*Internet Explorer*/
+	opacity:0.5;
+}
+
+</style>
+</head>
+<body>
+
+<h1>CSS3 opacity</h1>
+
+<h2>Transparenz mit CSS 3</h2>
+
+<p>Browser-Unterstützung:</p>
+
+<ul>
+	<li>Firefox 3.5</li>
+    <li>Internet Explorer 9</li>
+    <li>Chrome 4.0</li>
+    <li>Safari 3.1</li>
+    <li>Opera 9.0</li>
+</ul>
+
+<p>Achtung: Die CSS-Eigenschaft <em>opacity</em> kann, wenn einmal vergeben, nicht mehr aus dem Element "heraus gerechnet" werden, sondern wird immer weiter vererbt.</p> 
+
+<div id="blau"></div>
+
+<div id="bildbox">
+	<p><img src="bilder/10.jpg" alt="New York"></p>
+    
+    <p>Das alte New York</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS Navi vertikal und horizontal</title>
+<link href="css_navi_vertikal_horizontal.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h1>CSS Navigation vertikal und horizontal</h1>
+
+<h2>1.) Vertikale Liste</h2>
+
+<ul id="navi1">
+	<li><a href="#">Verweis 1</a></li>
+    <li><a class="aktivlink">langer Verweis 2</a></li>
+    <li><a href="#">Verweis 3</a></li>
+    <li><a href="#">sehr langer Verweis 4</a></li>
+    <li><a href="#">Verweis 5</a></li> 
+</ul>
+
+<h2>2.) Horizontale Liste</h2>
+
+<p>Um eine horizontale Navigation herzustellen, kann z.B. die inline-Technik verwendet werden. Hierzu werden die Listenpunkte mit der CSS-Eigenschaft <strong>display:inline;</strong> zu inline-Elementen umgewandelt und können dadurch nebeneinander stehen.</p>
+
+<p>Die Listenpunkte nehmen damit auch alle Eigenschaften eines inline-Elements an: keine Angabe einer festen Breite (oder Höhe) mehr möglich, &lt;li&gt; können nebeneinander stehen.</p>
+
+<p><strong>Vorteil:</strong> Für die Navigations-Elemente können  Begriffe in jeder gewünschten Textlänge verwendet werden, da sich die Breite aus der Wortlänge + padding links + padding rechts zusammen setzt.</p>
+
+<p><strong>Nachteil:</strong> Es kann <em>keine</em> feste Breite für die Listenpunkte vergeben werden, da diese nun inline-Elemente sind. Somit werden alle Listenpunkte unterschiedlich breit, je nach Inhalt. Auch die Gesamtbreite der Liste (ul) lässt nicht berechnen.</p>
+
+<p>Diese Art der Liste wird oft für ein sogenanntes Tab-Design verwendet, mit Navigationselementen als Registerkarten, die nicht ganz über die gesamte Breite der Webseite erstrecken.</p>
+
+<p><strong>Achtung:</strong> Bei horizontalen Navigationen mit der inline-Technik stellen die meisten Browser Lücken zwischen den Listenpunkten dar, obwohl keine Abstände eingegeben wurden:</p>
+
+<ul class="navi2">
+	<li><a href="#">Verweis 1</a></li>
+    <li><a class="aktiv2">langer Verweis 2</a></li>
+    <li><a href="#">Verweis 3</a></li>
+    <li><a href="#">sehr langer Verweis 4</a></li>
+    <li><a href="#">Verweis 5</a></li> 
+</ul>
+
+<p>Einzige Abhilfe hier, wenn keine Abstände gewünscht sind: Im HTML-Quelltext alle Listenpunkte direkt hintereinander, ohne Leerraum aufnotieren. (Diese Schreibweise sieht zwar etwas unaufgeräumt aus, aber führt zum Ziel!)</p>
+
+<ul class="navi2">
+	<li><a href="#">Verweis 1</a></li><li><a class="aktiv2">langer Verweis 2</a></li><li><a href="#">Verweis 3</a></li><li><a href="#">sehr langer Verweis 4</a></li><li><a href="#">Verweis 5</a></li> 
+</ul>
+
+</body>
+</html>

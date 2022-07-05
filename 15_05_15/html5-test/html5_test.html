@@ -1,0 +1,467 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML5 Testseite</title>
+<script type="text/javascript"> 
+
+window.onload = function() {
+	document.getElementById("dreh").onclick = function() {
+		var canvas  = document.getElementById('canvas');
+		var img     = new Image();
+		img.src     = 'bild.jpg';
+      	var context = canvas.getContext('2d');
+      	context.translate(300, 0);
+      	context.rotate(90 * Math.PI/180);
+      	context.drawImage(img, 0, 0, 300, 300);
+	} 
+} 
+
+</script>
+<style type="text/css">
+
+* {
+	margin:0;
+	padding:0;
+}
+
+h1,h2,p {
+	margin:15px;
+}
+
+ul {
+	margin:15px 15px 15px 45px;
+}
+
+div {
+	padding:20px;
+	border:2px dotted #0066FF;
+	margin:15px;
+}
+
+div.box {
+	width:150px;
+	padding:10px;
+	border:1px solid #666;
+	background-color:#999999;
+}
+
+</style>
+</head>
+<body>
+
+<h1>HTML5 Testseite</h1>
+
+<h2>&lt;details&gt;</h2>
+<p>Browser:</p>
+<ul>
+	<li>Chrome 22.0</li>
+</ul>
+
+<div>
+    <details>
+        <summary>Text ein/ausblenden</summary> <p>Hier kommt jetzt Text.</p>
+    </details>
+</div>
+
+<hr>
+
+<h2>&lt;mark&gt;</h2>
+<p>Browser:</p>
+<ul>
+	<li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+    <li>Chrome 22.0</li>
+    <li>IE 9.0</li>
+</ul>
+
+<div>
+    <p>Hier kommt Text mit einem <mark>farblich markierten</mark> Bereich.</p>
+</div>
+
+<hr>
+
+<h2>&lt;meter&gt;</h2>
+<p>Browser:</p>
+<ul>
+	<li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Chrome 22.0</li>
+</ul>
+
+<div>
+    <meter min="128" max="352" value="240">50%</meter>
+</div>
+
+<hr>
+
+<h2>&lt;progress&gt;</h2>
+<p>Browser:</p>
+<ul>
+	<li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+    <li>Chrome 22.0</li>
+    <li>IE 9.0</li>
+</ul>
+
+<div>
+    <progress id="progressBar" max="100" value="63">63</progress>
+</div>
+
+<hr>
+
+<h2>&lt;draggable&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+    <li>Chrome 22.0</li>
+</ul>
+
+<div>
+    <div class="box" draggable="true">Zieh mich</div>
+</div>
+
+<hr>
+
+<h2>&lt;hidden&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+    <li>IE 9.0</li>
+</ul>
+
+<div>
+    <p hidden>Wer das sehen kann, benutzt einen ganz alten Browser! ;-)</p>
+</div>
+
+<hr>
+
+<h2>&lt;datalist&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Chrome 22.0</li>
+    <li>IE 10.0</li>
+</ul>
+
+<div>
+    <input type="text" list="characters"> 
+    <datalist id="characters">
+		<option value="Homer Simpson"> 
+        <option value="Bart Simpsom"> 
+        <option value="Marge Simpson"> 
+        <option value="Lisa Simpson"> 
+        <option value="Maggie Simpson"> 
+        <option value="C. Montgomery Burns"> 
+        <option value="Waylon Smithers"> 
+        <option value="Apu Nahasapeemapetilon"> 
+        <option value="Ned Flanders">
+        <option value="Nelson Muntz"> 
+        <option value="Seymour Skinner"> 
+        <option value="Clancy Wiggum">
+	</datalist>
+</div>
+
+<hr>
+
+<h2>&lt;autofocus&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Firefox 16.0</li>
+    <li>Safari 5.1</li>
+    <li>Chrome 22.0</li>
+    <li>IE 10.0</li>
+</ul>
+
+<div>
+    <input type="text" name="nachname"> 
+    <input type="text" name="nachname"> 
+    <input type="text" name="nachname" autofocus>
+</div>
+
+<hr>
+
+<h2>&lt;autocomplete&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Firefox 16.0</li>
+    <li>Safari 5.1</li>
+    <li>Chrome 22.0</li>
+</ul>
+
+<div>
+    <!-- Beispiel 1 --> 
+    <form method="post" autocomplete="on"></form>
+    
+	<!-- Beispiel 2 --> 
+    <form method="post" autocomplete="off"></form>
+    
+	<!-- Beispiel 3 --> 
+    <form method="post" autocomplete="on">
+    	<select name="wasauchimmer">
+        	<option value="margherita">Margherita</option>
+            <option value="funghi">Funghi</option>
+            <option value="salami">Salami</option>
+        </select>
+    </form>
+</div>
+
+<hr>
+
+<h2>&lt;formaction&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+    <li>Chrome 22.0</li>
+    <li>IE 9.0</li>
+</ul>
+
+<div>
+    <form action="formular_attribute.html" method="post"> 
+    	<input type="text" name="nachname"> 
+    	<button type="submit">Submit 1</button> 
+    	<button type="submit" formaction="../../misc/form/form_1.php">Submit 2</button> 
+        <input type="submit" formaction="../../misc/form/form_2.php" value="Submit 3"> 
+    </form>
+</div>
+
+<hr>
+
+<h2>&lt;placeholder&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+    <li>Chrome 22.0</li>
+    <li>IE 9.0</li>
+</ul>
+
+<div>
+	<form> 
+    	<input type="text" name="adresse" placeholder="Bitte Straße, Hausnummer, Postleitzahl und Wohnort angeben!" style="width:400px;"> 
+        <input type="submit" value="Senden">
+	</form>
+</div>
+
+<hr>
+
+<h2>&lt;required&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+    <li>Chrome 22.0</li>
+    <li>IE 9.0</li>
+</ul>
+
+<div>
+	<form> 
+    	<input type="text" name="nachname" required> 
+        <input type="submit" value="Senden">
+	</form>
+</div>
+
+<hr>
+
+<h2>&lt;color&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Opera 12.0</li>
+	<li>Chrome 22.0</li>
+</ul>
+
+<div>
+	<input type="color" name="favcolor">
+</div>
+
+<hr>
+
+<h2>&lt;date&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+	<li>Chrome 22.0</li>
+</ul>
+
+<div>
+	<input type="date" name="datum" min="2012-10-20" max="2012-11-20" step="4">
+</div>
+
+<hr>
+
+<h2>&lt;datetime&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+</ul>
+
+<div>
+	<input type="datetime" name="datum_uhrzeit">
+</div>
+
+<hr>
+
+<h2>&lt;week&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+</ul>
+
+<div> 
+	<input type="week" name="datum">
+</div>
+
+<hr>
+
+<h2>&lt;email&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Chrome 22.0</li>
+    <li>IE 9.0</li>
+</ul>
+
+<div>
+	<input type="email" name="mail">
+</div>
+
+<hr>
+
+<h2>&lt;number&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Chrome 22.0</li>
+    <li>IE 10.0</li>
+</ul>
+
+<div>
+	<input type="number" name="num" value="2"> 
+    <input type="number" name="num" value="12" min="4" max="40" step="5" required>
+</div>
+
+<hr>
+
+<h2>&lt;range&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+    <li>Chrome 22.0</li>
+</ul>
+
+<div>
+	<p>Wie gefällt euch mein Web-Auftritt?</p> Mies <input type="range" name="points"> Richtig gut
+</div>
+
+<hr>
+
+<h2>&lt;search&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Safari 5.1</li>
+    <li>Chrome 22.0</li>
+    <li>IE 10.0</li>
+</ul>
+
+<div>
+	<form> 
+    	<input type="search" name="suche"> 
+        <input type="submit" name="abschicken">
+	</form>
+</div>
+
+
+<hr>
+
+<h2>&lt;url&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Chrome 22.0</li>
+    <li>IE 10.0</li>
+</ul>
+
+<div>
+	<form> 
+    	<input type="url" name="homepage"> 
+        <input type="submit" name="abschicken">
+	</form>
+</div>
+
+<hr>
+
+<h2>&lt;audio&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+    <li>Chrome 22.0</li>
+    <li>IE 9.0</li>
+</ul>
+
+<div>
+	<audio controls> 
+    	<source src="../../misc/data/space.ogg" type="audio/ogg"> 
+        <source src="../../misc/data/space.mp3" type="audio/mp3"> 
+        Sorry, mit diesem Browser funktioniert es nicht!
+	</audio>
+</div>
+
+<hr>
+
+<h2>&lt;video&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+    <li>Chrome 22.0</li>
+    <li>IE 9.0</li>
+</ul>
+
+<div>
+	<video width="352" height="288" controls> 
+    	<source src="bsp_videos/kick_video.mp4" type="video/mp4"> 
+        <source src="bsp_videos/demo-film.webm" type="video/webm"> 
+        <source src="bsp_videos/kick_video.ogg" type="video/ogv"> 
+        Sorry, mit diesem Browser funktioniert das Video nicht!
+	</video>
+</div>
+
+<hr>
+
+<h2>&lt;canvas&gt;</h2>
+<p>Browser:</p>
+<ul>
+    <li>Firefox 16.0</li>
+    <li>Opera 12.0</li>
+    <li>Safari 5.1</li>
+    <li>Chrome 22.0</li>
+    <li>IE 9.0</li>
+</ul>
+
+<div>
+	<canvas id="canvas" width="300" height="300"></canvas> 
+    <button id="dreh">Bild drehen</button>
+</div>
+
+</body>
+</html>

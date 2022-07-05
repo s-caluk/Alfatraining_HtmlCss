@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#5F5F5F;
+}
+
+ul {
+	list-style:none; /*Listenaussehen erfernen*/
+}
+
+ul.navi {
+	width:250px;
+	list-style:none; /*Listenaussehen entfernen*/
+	/*background-color:#86DCF7;*/ /*turkis*/
+}
+
+ul.navi li {
+	background-color:#CAD6F5; /*lila*/
+}
+
+ul.navi li a {
+	display:block;  /*verweis ueber seine gesamte Breite erstrecken*/
+	height:100px;   /*display ve height mutlaka eklenmeli*/
+	text-indent:-9999px;
+	text-decoration:none; 
+	color:#FFFFFF;
+	background-color:#0B04A3;
+}
+
+ul.navi li a:hover {
+	color:#000000;
+	background-color:#81D8F7;
+}
+
+/*Klassen fuer die einzelnen Buttons vergeben, mit Wechsel-Bilder ueber hover-Effekt*/
+
+ul.navi li a.home {
+	text-indent:-999999px;
+	background-image:url(buttons/button_home.gif);
+}
+
+ul.navi li a:hover.home {
+	background-image:url(buttons/button_over_home.gif);
+}
+
+ul.navi li a.info {
+	text-indent:-999999px;
+	background-image:url(buttons/button_info.gif);
+}
+
+ul.navi li a:hover.info {
+	background-image:url(buttons/button_over_info.gif);
+}
+
+ul.navi li a.kontakt {
+	text-indent:-999999px;
+	background-image:url(buttons/button_kontakt.gif);
+}
+
+ul.navi li a:hover.kontakt {
+	background-image:url(buttons/button_over_kontakt.gif);
+}
+
+/*aktiv-link , fuer dir unterschiedlichen Buttons jeweils einer*/
+/*Aktiv-link = die seite, auf der ich mich gerade befinde.Sieht in der navi anders aus, als die anderen Links*/
+
+ul.navi li a.home-aktiv {
+	text-indent:-999999px; /*bunu digerlerine de ekledi. ne gerek var anlamadim*/
+	background-image:url(buttons/button_over_home.gif);
+}
+
+ul.navi li a.info-aktiv {
+	text-indent:-999999px;
+	background-image:url(buttons/button_over_info.gif);
+}
+
+ul.navi li a.kontakt-aktiv {
+	text-indent:-999999px; 
+	background-image:url(buttons/button_over_kontakt.gif);
+}

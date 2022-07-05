@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#0A17F4; 
+}
+
+span {
+	text-transform:none;
+	background-color:#C5F8C8;
+}
+
+p.wortanfang {
+	text-transform:capitalize;
+}
+
+p.gross {
+	text-transform:uppercase;
+}
+
+p.klein {
+	text-transform:lowercase;
+}
+
+p.normal {
+	text-transform:none;
+}

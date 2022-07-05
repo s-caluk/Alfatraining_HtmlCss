@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#28059F;
+}
+
+p {
+	background-color:#D3CDCD;
+}
+
+p.links {
+	text-align:left;
+}
+
+p.zentriert {
+	text-align:center;
+}
+
+p.rechts {
+	text-align:right;
+}
+
+p.blocksatz-gut {
+	width:350px;
+	text-align:justify;
+	background-color:#6AFD7B;
+}
+
+p.blocksatz-schlecht {
+	width:250px;
+	text-align:justify;
+	background-color:#F95356;
+}
+
+

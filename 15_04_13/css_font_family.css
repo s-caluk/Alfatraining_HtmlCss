@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	color:#D108EC;
+}
+
+h2 {
+	font-family:"Courier New", Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco,  monospace	
+}
+
+h3 {font-family:Nyala, "Matura MT Script Capitals", Gadugi, serif;
+
+p { 
+	font-family:Verdana, Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", sans-serif;
+}

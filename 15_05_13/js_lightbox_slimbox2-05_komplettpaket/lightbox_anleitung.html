@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Lightbox Anleitung [af]</title>
+<style type="text/css">
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h2 {
+	font-size:20px;
+	font-weight:normal;
+	color:#666666;
+}
+
+code {
+	font-family:"Courier New", Courier, monospace;
+	color:#009;
+}
+
+ol {
+	margin-bottom:40px;
+}
+
+ol li {
+	margin-bottom:20px;
+}
+
+ol li dl {
+	margin :10px 0px 0px 20px;
+}
+
+dl dt {
+	font-weight:bold;
+}
+
+dl dd {
+	margin-bottom:20px;
+}
+
+a {
+	color:#06F;
+}
+
+.unwichtig {
+	color:#666;
+}
+
+.vorformatiert {
+	white-space:pre;
+}
+
+.keinumbruch {
+	white-space:nowrap;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Lightbox Anleitung [af]</h1>
+
+<h2>Version: Slimbox 2.05, HTML5-valide (siehe Schritt 4), andifichtner juli 2013</h2>
+
+<h3>Schritt 1 - Download</h3>
+
+<ol>
+	<li>Link zur Webseite des Entwicklers: <a href="http://www.digitalia.be/software/slimbox2#download">http://www.digitalia.be/software/slimbox2#download</a></li>
+    
+    <li>ZIP-Datei entpacken. Es finden sich folgende Dateien darin:
+    	<dl>
+        	<dt>example.html</dt>
+            <dd>Einfache Beispiel-Seite mit Standard-Konfiguration der Lightbox</dd>
+            
+            <dt>example.jpg</dt>
+            <dd>Bild, welches in der Beispiel-Seite verwendet wird</dd>
+            
+            <dt>README.txt</dt>
+            <dd>Anleitung und Info (engl.)</dd>
+            
+            <dt>Ordner: css</dt>
+            <dd>Lightbox-Stylesheet und auch die Bilder, die für die Lightbox-Label gebraucht werden (nextlabel, closelabel, loading...)</dd>
+            
+            <dt>Ordner: js</dt>
+            <dd>zusammengefasste JS-Datei (slimbox2.js) für die Funktion der Lightbox.</dd>
+            
+            <dt class="unwichtig">Ordner: src</dt>
+            <dd class="unwichtig">Source der JS-Datei (slimbox2.js) für die Lightbox, sehr ausführlich, deshalb nur geeignet für die Entwicklung, nicht für die Ausführung.</dd>
+            
+            <dt class="unwichtig">Ordner: extra</dt>
+            <dd class="unwichtig">Einige Extra-Skripte, die zur Lightbox hinzugefügt werden können.</dd>
+        </dl>
+    </li>
+    
+</ol>
+
+<h3>Schritt 2 - Einbindung</h3>
+
+<ol>
+	<li>Bereite eine HTML-Datei für die Galerie vor. Für die Vorschau-Bilder (oder Text-Links) eignet sich eine Liste mit innenliegenden a-tag (Struktur: ul - li - a).<br>
+	Beim Klick auf eines der Vorschau-Bilder soll die Lightbox aktiviert und das jeweilige Bild in groß gezeigt werden.</li>
+	
+	<li>Slimbox 2.05 basiert auf dem JQuery Framework. Auf alle zwei Javascript-Dateien muss im Head-Bereich der HTML-Datei verwiesen werden:<br>
+	<code class="vorformatiert">
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/slimbox2.js&quot;&gt;&lt;/script&gt;
+	</code><br>
+
+	Alternativ kann das erste Skript auch heruntergeladen werden, wodurch die HTML-Seite auch offline betrachtet werden kann.<br>
+Dazu die HTML-Seite &quot;example.html&quot; im Browser aufrufen und den Quellcode anzeigen lassen.<br>
+Durch einen Klick auf die Adresse der im Head verlinkten JS-Datei (<code class="keinumbruch">&lt;script type=&quot;text/javascript&quot; src=&quot;<a href="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js</a>&quot;&gt;&lt;/script&gt;</code>) das Skript öffnen und mit copy &amp; paste in eine leere, im Dreamweaver erstellte JS-Datei hinein kopieren. Diese Datei im Ordner &quot;js&quot; abspeichern (z.B. unter dem Namen: &quot;jquery_1-9-1&quot;).<br>
+Auf diese Datei wird nun verlinkt (, der 2. Link ist der gleiche, wie oben):<br>
+    <code class="vorformatiert">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery_1-9-1.js&quot;&gt;&lt;/script&gt;    
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/slimbox2.js&quot;&gt;&lt;/script&gt;
+	</code>
+	</li>
+    
+	<li>Binde die Slimbox CSS-Datei ein (= Empfehlung, oder ergänze Dein eigenes Stylesheet mit den Slimbox-Styles).<br>
+	<code class="vorformatiert">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/slimbox2.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot;&gt;
+	</code>
+	</li>
+    
+	<li>Überprüfe das CSS und stelle sicher, dass die eingebundenen Dateien <code>prevlabel.gif</code> und <code>nextlabel.gif</code> im richtigen Ordner liegen. Schau ausserdem noch nach den Pfaden der Dateien <code>loading.gif</code> und <code>closelabel.gif</code>, die in der <code>slimbox.css</code> Datei verlinkt sind.</li>
+    
+</ol>
+
+<h3>Schritt 3 - Aktivierung</h3>
+
+<ol>
+
+	<li>Füge ein <code>data-rel="lightbox"</code> Attribut zu jedem Link-Tag hinzu, um Slimbox zu aktivieren. Zum Beispiel:<br>
+	<code class="vorformatiert">&lt;a href=&quot;bilder/blume01.jpg&quot; data-rel=&quot;lightbox&quot; title=&quot;Mein Titel&quot;&gt;Bild 01&lt;/a&gt;</code><br>
+	<em>Optional </em>kannst Du das <code>title</code> Attribut benutzen, um einen Titel zu hinterlegen.</li>
+    
+	<li>Wenn Du eine Galerie aus verschiedenen zusammengehörigen Bildern hast, mache es genauso wie im 1. Schritt, füge aber noch einen Galerie-Namen in eckigen Klammern zum data-rel-Attribut hinzu. Jede Galerie bekommt ihren eigenen Namen. Zum Beispiel:<br>
+	<code class="vorformatiert">&lt;a href=&quot;images/image-1.jpg&quot; data-rel=&quot;lightbox[roadtrip]&quot;&gt;Bild 01&lt;/a&gt;
+&lt;a href=&quot;bilder/blume02.jpg&quot; data-rel=&quot;lightbox[roadtrip]&quot;&gt;Bild 02&lt;/a&gt;
+&lt;a href=&quot;bilder/blume03.jpg&quot; data-rel=&quot;lightbox[roadtrip]&quot;&gt;Bild 03&lt;/a&gt;
+</code><br>
+	Die Anzahl der Bilder pro Galerie ist unbegrenzt.</li>
+    
+</ol>
+
+<h3>Schritt 4 - Validierung</h3>
+
+<ol>
+	<li>Die heruntergeladene Lightbox ist noch nicht sofort HTML5-valide.<br>
+	Webseite mit Lösung hier: <a href="https://www.growse.com/news/comments/making-slimbox2-play-nice-with-html5/">https://www.growse.com/news/comments/making-slimbox2-play-nice-with-html5/</a></li>
+    
+    <li>In der herunter geladenen Version der Lightbox müssen 2 Änderungen getätigt werden:
+    	<ul>
+        	<li>Alle <code>&lt;a rel=&quot;lightbox&quot; href=&quot;...&quot;&gt;</code><br>
+    müssen ersetzt werden durch: <code>&lt;a data-rel=&quot;lightbox&quot; href=&quot;...&quot;&gt;</code><br>
+Dies wurde in Punkt 3 bereits erledigt und ist nur wichtig, wenn die Beispiel-Seite (example.html) direkt übernommen wurde.</li>
+    
+    		<li>Ganz unten im JavaScript der Lightbox steht folgender Block:<br>
+			<code class="vorformatiert">
+if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigator.userAgent)) { 
+	jQuery(function($) 
+		{ $(&quot;a[rel^='lightbox']&quot;).slimbox({/* Put custom options here */}, null, function(el) { 
+			return (this == el) || ((this.rel.length > 8) && (this.rel == el.rel)); 
+        }); 
+}); }
+</code><br>
+			Dieser muss ersetzt werden durch:<br>
+			<code class="vorformatiert">
+if (!/android|iphone|ipod|series60|symbian|windows ce|blackberry/i.test(navigator.userAgent)) { 
+	jQuery(function($) 
+		{ $(&quot;a[<strong>data-rel</strong>^='lightbox']&quot;).slimbox({/* Put custom options here */}, null, function(el) 
+			{ return (this == el) || ((this.<strong>attributes['data-rel'].value</strong>.length > 8) && (this.<strong>attributes['data-rel'].value == el.attributes['data-rel'].value</strong>)); 
+        }); 
+}); }
+</code></li>
+        </ul>
+    </li>
+    
+    <li>Jetzt ist die Lightbox auch HTML5-valide. Viel Spaß damit! :-)</li>
+</ol>
+
+</body>
+</html>

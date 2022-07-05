@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>javaScript Lightbox</title>
+
+<script type="text/javascript" src="js/jquery_1-9-1.js"></script> 
+<script type="text/javascript" src="js/slimbox2.js"></script>
+
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<div id="conteiner">
+
+	<h1>javaScript Lightbox</h1>
+    
+    <ul id="navi">
+    	<li><a href="#">Verweis 1</a></li>
+        <li><a href="#">Verweis 2</a></li>
+        <li><a href="#">Verweis 3</a></li>
+        <li><a href="#">sehr langer Verweis 4</a></li>
+        <li><a href="#">Verweis 5</a></li>
+    </ul>
+    
+    <div id="content">
+    	
+        <h2>Galeri 1</h2>
+        
+        <p>... mit Text-Links</p>
+        
+        <ul class="galerie">  <!--hepsi ayni dosyada olmak zorunda aman dikkat-->
+        
+            <li><a href="blumenbilder/01.jpg" data-rel="lightbox[blumen]" title="Blume 1">Bild 1</a></li>
+            <li><a href="blumenbilder/02.jpg" data-rel="lightbox[blumen]" title="Blume 2">Bild 2</a></li>
+            <li><a href="blumenbilder/03.jpg" data-rel="lightbox[blumen]" title="Blume 3">Bild 3</a></li>
+            <li><a href="blumenbilder/04.jpg" data-rel="lightbox[blumen]" title="Blume 4">Bild 4</a></li>
+            <li><a href="blumenbilder/05.jpg" data-rel="lightbox[blumen]" title="Blume 5">Bild 5</a></li>
+        
+        </ul>
+        
+         <h2>Galerie 2</h2>
+        
+        <p>...mit &lt;img&gt; - Vorschaubildern</p>
+        
+        <ul class="galerie">
+        
+            <li><a href="blumenbilder/01.jpg" data-rel="lightbox[flower]" title="Blume 1">
+            <span>Blume 1</span>
+            <img src="blumenbilder/01pic.jpg" alt="Blume1">
+            </a>
+            </li>
+            
+            <li><a href="blumenbilder/02.jpg" data-rel="lightbox[flower]" title="Blume 2">
+            <span>Blume 2</span>
+            <img src="blumenbilder/02pic.jpg" alt="Blume2">
+            </a>
+            </li>
+            
+            <li><a href="blumenbilder/03.jpg" data-rel="lightbox[flower]" title="Blume 3">
+            <span>Blume 3</span>
+            <img src="blumenbilder/03pic.jpg" alt="Blume3">
+            </a>
+            </li>
+            
+            <li><a href="blumenbilder/04.jpg" data-rel="lightbox[flower]" title="Blume 4">
+           <span>Blume 4</span>
+            <img src="blumenbilder/04pic.jpg" alt="Blume4">
+            </a>
+            </li>
+            
+            <li><a href="blumenbilder/05.jpg" data-rel="lightbox[flower]" title="Blume 5">
+            <span>Blume 5</span>
+            <img src="blumenbilder/05pic.jpg" alt="Blume5">
+            </a>
+            </li>
+            
+    	</ul>
+        
+        <h2>Galerie 3</h2>
+        
+        <p>...mit Vorschaubildern als background-image</p>
+        
+        <ul class="galerie textraus">
+            <li><a href="blumenbilder/01.jpg" data-rel="lightbox[fleur]" title="Blume 1" class="bild1">Blume 1</a></li>
+            <li><a href="blumenbilder/02.jpg" data-rel="lightbox[fleur]" title="Blume 1" class="bild2">Blume 2</a></li>
+            <li><a href="blumenbilder/03.jpg" data-rel="lightbox[fleur]" title="Blume 1" class="bild3">Blume 3</a></li>
+            <li><a href="blumenbilder/04.jpg" data-rel="lightbox[fleur]" title="Blume 1" class="bild4">Blume 4</a></li>
+            <li><a href="blumenbilder/05.jpg" data-rel="lightbox[fleur]" title="Blume 1" class="bild5">Blume 5</a></li>
+    	</ul>        
+    
+    </div>
+
+
+</div>
+</body>
+</html>

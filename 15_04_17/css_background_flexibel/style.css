@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+	background-image:url(bilder/bg_quadrat.gif);
+}
+
+h1 {
+	color:#1420FF;
+}
+
+body.verlauf {
+	background-image:url(bilder/verlauf_300y.jpg);
+	background-repeat:repeat-x;
+	background-position:left bottom;
+	background-attachment:fixed;
+	background-color:#FFFFFF;
+	/*background-color:#FC68E9;*/   /*Testfarbe*/
+}
+
+p.transparentverlauf {
+	width:200px;
+	height:600px;
+	background-image:url(bilder/verlauf_transparent.png);
+	background-repeat:repeat-x;
+	background-color:#21B710;
+}

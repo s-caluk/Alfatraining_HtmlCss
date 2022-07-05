@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+/*alle automatischen Aussenabstande des Browsers auf NULL setzen:*/
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	margin-bottom:30px;
+}
+
+h2 {
+	margin-bottom:20px;
+}
+
+ul {
+	margin-left:40px;
+}
+
+ul#navi1 {
+	width:180px;
+	list-style:none;
+	background-color:#EEBAF9;
+}
+
+ul#navi1 li {
+	margin-bottom:5px;
+	background-color:#B7F1F0;
+}
+
+ul#navi1 li a {
+	display:block; /*Verweis ueber seine gesamte Breite erstrecken*/
+	padding:5px;
+	text-decoration:none;
+	color:FFFFFF;
+	background-color:#9CDFFB;
+}
+
+ul#navi1 li a:hover {
+	color:#FFFFFF;
+	background-color:#0A107A;
+}
+
+
+/*----------------------------
+-------vertikale Liste------
+----------------------------*/
+

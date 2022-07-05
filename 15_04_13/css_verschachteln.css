@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1 {
+	color:#3AB949;
+}
+
+ul {
+	background-color:#EAF5D3;
+}
+
+/*Alle Listenpunkten auf der Webseite, egal, ob sie in einer ul oder ol stehen, sind blau*/
+li {
+	color:#299EF3; /*blau*/
+}
+
+/*Alle Listenpunkte, welche in einer ul liegen, sind rot:*/
+ul li {
+	color:#D71619; /*rot*/
+} 
+
+ul li ul li ul {
+	background-color:#95FF8D;/* yesil*/
+}
+
+ul li ul li ul li {
+	color:#880EBD; /*mor*/
+	background-color:#E0C7F8; /*violet*/
+}
+
+ul li ul li ul li ul li ul li {
+	color:#EF9B13; /*turuncu*/
+}

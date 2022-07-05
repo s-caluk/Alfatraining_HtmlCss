@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS position &ndash; z-index</title>
+<style type="text/css">
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+	background-image:url(bilder/bg_quadrat.gif);
+}
+
+h1 {
+	margin-bottom:20px;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+div#conteiner {
+	margin:20px auto;
+	width:800px;
+}
+a.tooltip {
+	position:relative; /*bezugspunkt der absoluten Positionierung setzen*/
+	font-weight:bold;
+	color:#09BF07;
+}
+
+/*Info-Kasten wird im Normalzustand des Links versteckt:*/
+
+a.tooltip span{
+	display:none;
+}
+
+/*erst bei a:hover erscheint er:*/
+
+a:hover.tooltip span {
+	display:block;
+	position:absolute;
+	top:20px;
+	left:0px;
+	z-index:1; /*damit tooltip bei a:hover immer oben liegt*/
+	width:120px;
+	padding:20px;
+	color:#FFFFFF;
+	background-color:#0B0592;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div id="conteiner">
+
+<h1>CSS tooltip</h1>
+
+<p>Sie können den CSS-tooltip <a href="#" class="tooltip">hier TESTEN <span>mit dem CSS-tooltip kann eine Info eingeblendet werden</span></a> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, <a href="#" class="tooltip">hier TESTEN <span>mit dem CSS-tooltip kann eine Info eingeblendet werden</span></a> sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,<a href="#" class="tooltip">hier TESTEN <span>mit dem CSS-tooltip kann eine Info eingeblendet werden</span></a>  sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est<a href="#" class="tooltip">hier TESTEN <span>mit dem CSS-tooltip kann eine Info eingeblendet werden</span></a>  Lorem ipsum dolor sit amet. Lorem <a href="#" class="tooltip">hier TESTEN <span>mit dem CSS-tooltip kann eine Info eingeblendet werden</span></a> ipsum dolor <a href="#" class="tooltip">hier TESTEN <span>mit dem CSS-tooltip kann eine Info eingeblendet werden</span></a> sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+</div>
+
+
+</div>
+
+</body>
+</html>

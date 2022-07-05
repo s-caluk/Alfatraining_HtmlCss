@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS3 border-radius</title>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h2 {
+	margin-bottom:20px;
+}
+
+div {
+	width:300px;
+	height:200px;
+	padding:20px;
+	margin:0px 0px 30px 30px;
+	background-color:#89EAEF;
+}
+
+div p {
+	background-color:#FF0EEE;
+}
+
+.eins {
+	-moz-border-radius:20px;/* Firefox*/
+	-webkit-border-radius:20px; /*webkit= Safari + Chrome*/
+	border-radius:20px;
+	/*border:5px solid #6FABFC;*/
+}
+.zwei {
+	-moz-border-radius:60%;/* Firefox*/
+	-webkit-border-radius:60%; /*webkit= Safari + Chrome*/
+	border-radius:60%;
+	/*border:5px solid #6FABFC;*/
+}
+
+.drei {
+	-moz-border-radius:30px 80px 0px 80px;/* Firefox*/
+	-webkit-border-radius:30px 80px 0px 80px; /*webkit= Safari + Chrome*/
+	border-radius:30px 80px 0px 80px;
+	/*border:5px solid #6FABFC;*/
+}
+
+.vier {
+	height:300px;
+	-moz-border-radius:50%;/* Firefox*/
+	-webkit-border-radius:50%; /*webkit= Safari + Chrome*/
+	border-radius:50%;
+	/*border:5px solid #6FABFC;*/
+}
+
+
+
+</style>
+</head>
+<body>
+
+<h1>CSS3 border-radius</h1>
+
+<h2>Runde Ecken mit CSS 3</h2>
+
+<div class="eins">
+	<p>Ein div mit einem border-radius von 20px</p>
+</div>
+
+<div class="zwei">
+	<p>Ein div mit einem border-radius von 60%</p>
+</div>
+
+<div class="drei">
+	<p>Ein div mit einem border-radius von :30px 80px 0px 80px</p>
+</div>
+
+<p>Die Werte für <strong>border-radius</strong> können absolut in Pixeln, oder relativv in em oder Prozent angegeben werden. <strong>border-radius</strong> wirkt in allen Arten von HTML-Boxen (auch bei Bildern), jedoch nicht bei &lt;table&gt; </p>
+
+<div class="vier">
+	<p>Ein div mit einem border-radius von 50%</p>
+</div>
+
+<p>Wenn die Ecken rund genug (ab 50% aufwärts), sowie Breite und Höhe identisch sind , wird mit <strong>border-radius </strong> ein Kreis aufgezogen.</p>
+
+<p>Die Eigenschaft <strong>border-radius</strong> wird von folgenden Browser-Versionen interpretiert: IE 9+ , Firefox4+ , Chrome 11+ , Safari 5+ und Opera</p><br>
+
+<p>Für ältere Firefox- , Safari- , und Crome- Versionen gibt es zusätzlich noch die möglichkeit, über Browser-präfixe die border-radius-Eigenschaft zu vergeben.</p><br>
+
+<p><strong>border-radius</strong> rundet die Ecken von HTML-Boxen ab; die Eigenschaft <em>border</em> muss dazu nicht vergeben werden.</p><br>
+
+<p>CSS <strong> border-radius</strong> ist nicht erblich, d.h. Elemente innerhalb eines Elements mit border-radius haben nicht automatisch abgerundete Ecken.</p>
+
+
+
+</body>
+</html>

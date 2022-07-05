@@ -1,0 +1,9 @@
+[DEFAULT]
+BASEURL=https://www.google.de/
+[{000214A0-0000-0000-C000-000000000046}]
+Prop3=19,11
+[InternetShortcut]
+IDList=
+URL=https://www.google.de/#newwindow=1&q=phase+5
+IconFile=https://www.google.de/favicon.ico
+IconIndex=1

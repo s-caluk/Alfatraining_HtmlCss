@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+	background-image:url(bilder/background.jpg);
+}
+
+h1 {
+	margin-bottom:20px;
+	color:#FFFFFF;
+	background-color:#000000;
+}
+
+h2 {
+	margin-bottom:20px;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+div#container {
+	margin: 20px auto;
+	width:900px;
+	background-color:#668AFF;
+}
+
+div#content {
+	margin-left:20px;
+	color:#FFFFFF;
+	background-color:#FF9E00;
+}
+
+div#spaltelinks {
+	float:left;
+	width:350px;
+	margin-left:20px;
+	margin-right:40px;
+	background-color:#009BFF;
+}
+
+div#bildbox {
+	width:300px;
+	height:250px;
+	padding:20px;
+	margin-left:100px;
+	background-color:#81AB7D;
+}
+
+div#footer {
+	height:50px;
+	margin-bottom:20px;
+}
+
+/*--------------Navi----------*/
+
+ul#navi {
+	margin-bottom:20px;
+}
+
+ul#navi li {
+	float:left;
+	list-style:none;
+	margin-left:20px;
+}
+
+ul#navi li a {
+	display:block;
+	width:120px;
+	padding:20px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#FFF6F6;
+	background-color:#000000;
+}
+
+ul#navi li a:hover {
+	color:#000000;
+	background-color:#FFF6F6;
+}
+
+/*Bildergalerie*/
+ul#vorschaubilder {
+	float:right;
+	width:200px;     /*2 Listenpunkte nebeneinander: 100px + 100px = 200px*/
+	background-color:#F54D50;
+	list-style:none;
+}
+
+ul#vorschaubilder li {
+	float:left;
+	width:100px;
+	height:100px;
+	background-color:#53DC67;
+}
+
+ul#vorschaubilder li a {
+	display:block;
+	height:100px;
+	border:2px solid #FFFFFF;
+	background-color:#E8FF00;
+	text-indent:-9999px;
+}
+
+
+/* kleine blume Vorschaubilder */
+
+ul#vorschaubilder li a.bild1 {
+	background-color:#2A2EDB;
+}
+
+ul#vorschaubilder li a.bild2 {
+	background-color:#3DCF44;
+}
+
+/* grosse Bilder im Span */
+ul#vorschaubilder li a span {
+	display:none;
+	position:absolute;
+	z-index:1;
+	width:300px;
+	top:100px;
+	left:20px;
+	text-indent:0px;
+	background-color:#67F3EC;
+}
+
+ul#vorschaubilder li a:hover span {
+	display:block;
+}
+
+
+/* Bildunterschrift im em */
+ul#vorschaubilder li a span em {
+	display:block;
+	height:30px;
+	padding:5px;
+	color:#2B2525;
+	font-style:normal;
+}

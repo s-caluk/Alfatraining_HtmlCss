@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+}
+
+h1 {
+	color:#AD07D1;
+}
+
+/*allgemeine Formatierung füer Textabsaetze ueber den Typ-Selektor:*/
+p {
+	background-color:#F2F8BB; /*gelb*/
+}
+
+.blau {
+	background-color:#AFF0F5;
+}
+
+span {
+	color:#D9032B; /*rot*/
+}
+/*freie Klasse, d.h. fuer jeden HTML-Typ verwendbar:*/
+.blau {
+	background-color:#AFF0F5;
+}
+

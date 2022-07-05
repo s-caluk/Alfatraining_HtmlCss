@@ -1,0 +1,206 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS float 7</title>
+<style type="text/css">
+/*alle automatischen Abstande des Browsers auf NULL setzen:*/
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	margin-bottom:20px;
+	background-color:#5290FD;
+}
+
+h2 {
+	margin-bottom:20px;
+}
+
+h3 {
+	margin-bottom:10px;
+	color:#605F5F;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+div#container {
+	margin:20px auto;
+	width:800px;
+	padding:20px 20px 0px 20px;
+	border:2px solid #A011FF;
+}
+
+ul#navi {
+	float:left;
+	width:200px;   /*feste Breite ist bei float = Pflicht*/
+	margin-bottom:20px;   /*falls die Navi einmal mehr Hoehe hat, als der Content und den Footer nach unten schieben muss*/
+	list-style:none;  /*Listenaussehen entfernen*/
+	/*background-color:#C513C9;*/
+}
+
+ul#navi li {
+	margin-bottom:10px;
+	background-color:#54F06F;
+}
+
+ul#navi li a {
+	display:block;
+	padding:10px;
+	text-decoration:none;
+	color:#000000;
+	background-color:#48DFFF;
+}
+
+ul#navi li a:hover {
+	background-color:#135CCC;
+}
+	
+
+div#content {
+	padding:10px;
+	margin-left:220px;
+	margin-right:120px;
+	margin-bottom:20px;
+	background-color:#BDBDBD;
+}
+
+div#rechtespalte {
+	float:right;
+	width:100px;
+	margin-bottom:20px;
+	background-color:#98FB25;
+}
+
+p#footer {
+	background-color:#609CEC;
+}
+
+.floatstop {
+	clear:both;   /*beendet das Umfliessen*/
+}
+
+.floatstop-left {
+	clear:left;
+}
+
+
+p.pic {
+	float:left;
+	width:20px;
+	height:20px;
+	margin:5px;
+	text-indent:-9999px;
+	background-color:#293AF5;
+}
+
+</style>
+</head>
+<body>
+
+<div id="container">
+
+    <h1>CSS float 7</h1>
+    
+    <!--floats zuerst aufrufen...-->
+    <ul id="navi">
+    	<li><a href="#">Verweis 1</a></li>
+        <li><a href="#">Verweis 2</a></li>
+        <li><a href="#">Verweis 3</a></li>
+        <li><a href="#">Verweis 4</a></li>
+        <li><a href="#">Verweis 5</a></li>
+        <li><a href="#">Verweis 6</a></li>
+        <li><a href="#">Verweis 7</a></li>
+    </ul>
+    
+    <div id="rechtespalte">
+    	<p>Das ist meine rechte Spalte</p>
+        
+        <p class="pic">Bild 1</p>
+        <p class="pic">Bild 2</p>
+        <p class="pic">Bild 3</p>
+        <p class="pic">Bild 4</p>
+        <p class="pic">Bild 5</p>
+        <p class="pic">Bild 6</p>
+        <p class="pic">Bild 7</p>
+        
+        <p>Hier steht ein kleiner Text, der von dem vor ihm notierten float-Elementen dazu gezwungen wird, diese zu umfließen.</p>
+        
+        <p class="pic">Bild 1</p>
+        <p class="pic">Bild 2</p>
+        <p class="pic">Bild 3</p>
+        <p class="pic">Bild 4</p>
+        <p class="pic">Bild 5</p>
+        <p class="pic">Bild 6</p>
+        <p class="pic">Bild 7</p>
+        
+        <p class="floatstop">Dieser Text muss die kleinen Quadtrate NICHT umfliessen, er trägt ein <em>clear:both;</em> in sich.</p>
+    </div>
+    
+    <!--...vor dem normalen Elementfluss
+    wenn alle nebeneinander stehen sollen-->
+    <div id="content">
+    
+    	<h2>float und clear</h2>
+        
+        <h3>Dies ist mein Inhalts-Bereich</h3>
+        
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor inviduerat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        
+        <p class="pic">Bild 1</p>
+        <p class="pic">Bild 2</p>
+        <p class="pic">Bild 3</p>
+        <p class="pic">Bild 4</p>
+        <p class="pic">Bild 5</p>
+        <p class="pic">Bild 6</p>
+        <p class="pic">Bild 7</p>
+        <p class="pic">Bild 8</p>
+        <p class="pic">Bild 9</p>
+        <p class="pic">Bild 10</p>
+        <p class="pic">Bild 11</p>
+        <p class="pic">Bild 12</p>
+        <p class="pic">Bild 13</p>
+        <p class="pic">Bild 14</p>
+        <p class="pic">Bild 15</p>
+        <p class="pic">Bild 16</p>
+        <p class="pic">Bild 17</p>
+        
+        <p>Hier steht ein Text, der von dem vor ihm notierten float-Elementen dazu gezwungen wird, diese zu umfließen. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>       
+        
+        <p class="pic">Bild 1</p>
+        <p class="pic">Bild 2</p>
+        <p class="pic">Bild 3</p>
+        <p class="pic">Bild 4</p>
+        <p class="pic">Bild 5</p>
+        <p class="pic">Bild 6</p>
+        <p class="pic">Bild 7</p>    
+        
+        <p class="floatstop-left">Dieser Text muss die kleinen Quadtrate NICHT umfliessen, er trägt ein <em>clear:left;</em> in sich.</p>
+        
+        <p class="pic">Bild 1</p>
+        <p class="pic">Bild 2</p>
+        <p class="pic">Bild 3</p>
+        <p class="pic">Bild 4</p>
+        <p class="pic">Bild 5</p>
+        <p class="pic">Bild 6</p>
+        <p class="pic">Bild 7</p>
+        
+        <p class="floatstop">Dieser Text muss die kleinen Quadtrate NICHT umfliessen, er trägt ein <em>clear:both;</em> in sich. Hiermit steht er unter allen floats, auch unter der rechten Spalte.</p>
+        
+    </div>  <!--Ende div#content-->
+    
+    <p id="footer" class="floatstop">Ich bin der Fussbereich!</p>
+    
+</div>
+
+</body>
+</html>

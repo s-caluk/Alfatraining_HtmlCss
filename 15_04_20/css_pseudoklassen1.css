@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#2636E4;
+}
+
+/*Verweis im Normalzustand*/
+a {
+	font-size:24px;
+	text-decoration:none;
+	color:#54EF42; /*gruen*/
+	background-color:#F3E960; /*gelb*/
+}
+
+/*Verweis waehrend der Benutzer mit der Maus darueber faehrt*/
+a:hover {
+	text-decoration:underline;
+	background-color:#DB62EC; /*rosa*/
+}
+
+/*mein besonderer Verweis im Normalzustand*/
+a.besonders {
+	text-decoration:underline;
+	color:#000000;
+	background-color:#D81013; /*rot*/
+}
+
+/*mein besonderer Verweis im hover-Zustand*/
+a:hover.besonders {
+	text-decoration:none;
+	background-color:#30CADD; /*hell blau*/
+}
+
+	
+	

@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	background-color:#D4D1D1;
+}
+
+div#container {
+	width:800px;
+	height:500px;
+	margin:40px auto;
+	border:2px solid #3B3B3B;
+}
+
+h1 {
+	font-size:30px;
+	color:#EC0F13;
+}
+
+ul#navi {
+	height:100px;
+/*	background-color:#E0A31E;*/
+}
+
+ul#navi li {
+	float:left;
+	width:160px;
+	list-style:none;
+	background-color:#31D118;
+}
+
+ul#navi li a {
+	display:block;
+	padding:10px;
+	text-align:center;
+	text-decoration:none;
+	color:#9115E4;
+	-moz-box-shadow: 0px 0px 5px #000000;
+	-webkit-box-shadow: 0px 0px 5px #000000;
+	box-shadow: 0px 0px 5px #000000;
+	background-color:#16DFC3;
+}
+
+ul#navi li a:hover {
+	background-color:#E19C1B;
+}
+/*die Unternavigation wird mit display:none versteckt*/
+ul#navi ul {
+	position:absolute;  /*verhindert das Verdraengen der folgenden Elemente*/
+	width:160px;
+	display:none;
+}
+
+
+ul#sub li a {
+	-moz-box-shadow: 0px 0px 5px #000000;
+	-webkit-box-shadow: 0px 0px 5px #000000;
+	box-shadow: 0px 0px 5px #000000;
+	background-color:#22E52C;
+}
+
+/*jetzt wird die Unternavigation wieder eingeblendet*/
+ul#navi li:hover ul#sub {
+	display:block;
+}
+
+
+

@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS position absolute &ndash; relative</title>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+p {
+	margin-bottom:20px;
+	text-align:justify;
+}
+
+div {
+	width:190px;
+	height:190px;
+	padding:10px;
+	border:1px solid #000000;
+}
+
+div#container {
+	position:relative;   /*Bezugspunkt der absoluten Positionierung auf den container setzen*/
+	margin:20px auto;
+	width:730px;
+	height:auto;   /*vom Element div geerbte Hohe von 180px wieder zurueck setzen auf normal = Element wachst durch seine Inhalte*/
+	/*height:600px;*/
+	padding-right:70px;
+}
+
+div#rot {
+	position:absolute;
+	top:50px;
+	left:50px;
+	background-color:#FF0004;
+}
+
+div#blau {
+	position:absolute;
+	right:-25px;
+	top:25px;
+	background-color:#4C82FF;
+}
+
+div#gruen {
+	position:absolute;
+	left:150px;
+	bottom:50px;
+	background-color:#3FB308;
+}
+
+div#gruen p {
+	text-align:left;
+}
+
+div#gelb {
+	position:absolute;
+	right:-150px;
+	bottom:25px;
+	background-color:#F0FF00;
+}
+
+div#gelb p {
+	text-align:left;
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="container">
+
+    <h1>CSS position absolute &ndash; relative</h1>
+    
+    <div id="rot"></div>
+    
+    <div id="blau"></div>
+    
+    <div id="gruen">
+    	<p>Mit absoluter Positionierung können Elemente komplett überdeckt werden.<br>
+		(Mit der float-Technik ist nur ein Verdrängen von Text, jedoch kein Überdecken möglich.)</p>
+    </div>
+    
+    <div id="gelb">
+    	<p>Der div#container bekommt <strong>position:relative;</strong> zugewiesen und stellt damit den neuen Bezugspunkt für die absolute Positionierung dar. Standardmäßig ist &lt;body&gt; der Bezugspunkt.</p>
+    </div>
+    
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+</div>
+
+</body>
+</html>

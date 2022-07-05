@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font:16px Arial, "Adobe Garamond Pro", Chiller, Impact, Haettenschweiler, serif;
+}
+
+h1 {
+	height:50px;
+	margin-bottom:20px;
+	text-align:center;
+	/*background-color:#C0FFE8;	*/
+}
+
+p {
+	margin-bottom:20px;
+}
+
+.auto {
+	overflow:auto;
+}
+
+div#container { 
+	position:relative;
+	margin:20px auto;
+	width:600px;
+	height:700px;
+	padding:20px;
+	border:5px solid #029613;
+}
+
+div#grossbild {
+	position:absolute;
+	width:460px;
+	height:400px;
+	padding:20px;
+	margin-bottom:20px;
+	top:235px;
+	background-color:#C0FFE8;
+}
+
+
+/*====================================*/
+ul#navi {
+	list-style:none;
+}
+
+ul#navi li {
+	float:left;
+	margin-bottom:20px;
+	width:300px;
+	height:50px;
+	border-bottom:5px solid #FFFFFF;
+	background-color:#029613;
+}
+
+ul#navi li a {
+	position:relative;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	padding:15px;
+	font-size:20px;
+	color:#FFFFFF;
+}
+
+ul#navi li a:hover {
+	color:#029613;
+	background-color:#FFFFFF;
+	border-bottom:5px solid #029613;
+}
+
+ul#navi li a.aktiv {
+	color:#029613;
+	background-color:#FFFFFF;
+	border-bottom:5px solid #029613;
+}
+
+/*====================================*/
+
+
+ul#kleinbilder {
+	float:left;
+	width:300px; 
+	list-style:none;
+	background-color:#F54D50;
+
+}
+
+ul#kleinbilder li {
+	float:left;
+	width:60px;
+	height:52px;
+	list-style:none;
+	background-color:#53DC67;
+}
+
+ul#kleinbilder li a {
+	display:block;
+	height:48px;
+	border:2px solid #FFFFFF;
+	background-color:#E8FF00;
+	text-indent:-9999px;
+}
+
+ul#kleinbilder li a.blume1 {
+	background-image:url(blumenbilder/01pic.jpg);
+}
+
+ul#kleinbilder li a.blume2 {
+	background-image:url(blumenbilder/02pic.jpg);
+}
+ul#kleinbilder li a.blume3 {
+	background-image:url(blumenbilder/03pic.jpg);
+}
+
+ul#kleinbilder li a.blume4 {
+	background-image:url(blumenbilder/04pic.jpg);
+}
+
+ul#kleinbilder li a.blume5 {
+	background-image:url(blumenbilder/05pic.jpg);
+}
+
+/*====================================*/
+
+ul#kleinbilder li a span {
+	display:none;
+	position:absolute;
+	z-index:1;
+	width:500px;
+	top:235px;
+	left:20px;
+	text-indent:0px;
+	background-color:#67F3EC;
+}
+
+ul#kleinbilder li a:hover span {
+	display:block;
+}
+
+ul#kleinbilder li a span em {
+	display:block;
+	height:30px;
+	padding:5px;
+	color:#2B2525;
+	font-style:normal;
+}
+
+

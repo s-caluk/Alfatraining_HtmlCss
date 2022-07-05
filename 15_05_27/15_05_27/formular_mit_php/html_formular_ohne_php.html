@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML Formulare</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="container">
+	
+    <h1>HTML Formulare</h1>
+    
+	<ul class="navi">
+    	<li><a href="#">Start</a></li>
+        <li><a href="#">Buch</a></li>
+        <li><a href="#">Forum</a></li>
+        <li><a href="#">Kontakt</a></li>
+    </ul>
+    
+    <!--floats zuerst aufrufen...-->
+    <div id="seitbox">
+    	<h3>Infos zur Browser-Unterstützung</h3>
+        
+        <p>Der unterschiedlich starke Browser-Support bildet den derzeit größten Stolperstein bei der Verwendung von HTML5-Formularen.<br>
+	Während der IE9 <strong>keinen</strong> der verschiedenen Typen des input-Feldes unterstützt (erst ab Version 10), können Firefox und Chrome häufig genutzte Typen wie <strong><code>email, tel, url</code></strong> schon gut verarbeiten.</p>
+    
+    <p>Aber selbst moderne Browser sind noch weit von einer kompletten Unterstützung entfernt. Dennoch ist es an der Zeit, HTML5-Formulare auf den eigenen Seite einzubauen. Schon allein für die immer größer werdende mobile Anwenderschaft ist es ein großer Vorteil, ihre virtuelle Tastatur nicht ständig von Buchstaben auf Zahlen umzuschalten. Die Brwoserhersteller werden sicher zukünftig noch mehr Standards umsetzen.</p>
+    </div>
+
+	<!--...vor dem normalen Elementfluss-->
+    <div id="content">
+    
+    	<form action="mein-skript.php" method="post" id="formular1" name="formular1">
+        	<h2>Kontakt</h2>
+            
+            <fieldset>
+            	<legend>Ansprechpartner</legend>
+                
+                <p><label for="name">Name:</label></p>
+                
+                <p><input type="text" name="name" id="name" required value="*"></p>
+                
+                <p><label for="emailadresse">E-Mail:</label></p>
+                
+                <!--Reihenfolge der Attribute beliebig-->
+                <p><input type="email" name="emailadresse" id="emailadresse"  required value="*"></p>
+                
+            </fieldset>
+            
+            <fieldset>
+            	<legend>Ihre Nachricht</legend>
+                
+                <textarea cols="3" rows="4" name="textfeld" id="textfeld" required >*</textarea>
+            </fieldset>
+            
+            <fieldset>
+            	<legend>Mail senden</legend>
+                
+                <p><input type="submit" name="senden" id="senden" value="Absenden"></p>
+            </fieldset>
+        
+        </form>
+        
+        <h3>Anleitung:</h3>
+        
+        <ol>
+        	<li>Formular mit HTML und CSS erstellen ( = "kontakt.html"), Layout im Browser testen.</li>
+            
+            <li>Die HTML-Datei über "Speichern unter" als PHP-Datei abspeichern: "kontakt.php" Nun befinden sich eine HTML- und eine PHP-Datei im Ordner.</li>
+            
+            <li>In die PHP-Datei das Skript hineinkopieren und zwar ab der ersten Zeile (wichtig!) beginnend, ansonsten funktioniert es später nicht.</li>
+            
+            <li>In die Formularfelder die Abfragen für die Variablen eintragen.</li>
+            
+            <li>Achtung: Der HTML-Validator validiert und versteht nur HTML, deshalb entstehen Fehlermeldungen, wenn die PHP-Datei damit geprüft wird. Diese Fehler brauchen nicht beachtet zu werden.</li>
+            
+            <li>Die Datei "kontakt.php" wird für die Webseite verwendet, also auch im Menü verlinkt. Die alte Datei "kontakt.html" dient nur für Layout-Änderungen und kann im Ordner mit behalten, aber darf nicht verlinkt werden.</li>
+        </ol>
+        
+    </div>
+	
+    <div id="footer">
+    	<ul class="navi">
+        	<li><a href="#">Impressum</a></li>
+            <li><a href="#">Links</a></li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

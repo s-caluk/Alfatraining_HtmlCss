@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#F8A303;
+	background-color:#3B05C0;
+}
+
+p.bildverweis {
+	width:500px;
+	height:400px;
+	background-color:#3AEB3E;
+}
+
+p.bildverweis a {
+	display:block; /*wandelt Element a in ein Block-Element um*/
+	height:400px; /*a ist nun ein Block-Element und kann damit auch eine feste Hoehe bekommen*/
+	text-indent:-9999px;
+	background-image:url(bilder/04.jpg);
+	background-color:#F8C5F1;
+}
+
+p.bildverweis a:hover {
+	background-image:url(bilder/10.jpg);
+}
+
+
+
+

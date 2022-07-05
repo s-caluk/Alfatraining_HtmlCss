@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	background-color:#818181;
+}
+
+h1 {
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color:#FFFFFF;
+}
+
+h2 {
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color:#FF9600;	
+}
+
+p {
+	color:#5E0360;
+	background-color:#F8F8F8; 
+}
+
+span {
+	color:#73047A;
+	background-color:#F8E4F7;
+	line-height:8px;
+}
+
+p span {
+	color:#FD9006;
+	background-color:#F0F1CB;
+}
+
+p.lila{
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	color:#D004F4;
+}
+
+.gruen {
+	color:#1CA002;
+}
+
+/*Formatierung fuer Liste*/
+li {
+	color:#616161; 
+}
+
+ul {
+	color:#D71619; 
+	background-color:#F7D697;
+}
+
+ul li ol {
+	color:#D71619; 
+	background-color:#FDB356;

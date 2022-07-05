@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS_pseudoklassen2</title>
+<style type="text/css">
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica,  sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#DB3033;
+}
+
+em {
+	color:#138602;
+	background-color:#E8EFB9
+}
+
+a {
+	text-decoration:none;
+}
+/*Link im Normalzustand, noch nicht besucht*/
+a:link {
+	font-size:25px;
+	color:#66E838; /*gruen*/
+}
+
+a:visited {
+	color:#888888; /*grau*/
+}
+
+/*Element erhaelt den Focus - formular hazirlarken kullaniliyormus */
+a:focus {
+	color:#EDD4F0;
+	background-color:#8A0789;
+}
+
+/*Link beim Ueberfahren mit der Maus*/
+a:hover {
+	text-decoration:underline;
+	background-color:#F9B552;
+}
+
+/*gerade angeklickter Link mit gehaltener MAustaste ( der Zustand a:hover findet gleichzeitig auch statt)*/
+
+a:active {
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	font-size:30px;
+}
+
+
+</style>
+</head>
+<body>
+
+<h1>CSS Pseudoklassen 2 </h1>
+
+<h2>Fortsetzung der Datei: "CSS Pseudoklassen 1"</h2>
+
+<p>Werden weitere Pseudoklassen hinzugefügt, <strong>muss</strong> folgende Reichenfolge bei der Notierung im Stylesheet eingeladen werden:</p>
+
+<ol>
+	<li><strong>:link</strong> für Verweise zu noch nicht besuchten Seiten</li>
+    <li><strong>:visited</strong> für Verweise zu bereits besuchten Seiten</li>
+    <li><strong>:focus</strong> für Elemente, die den Focus erhalten, z.B durch
+    "Durchtabben" mit der Tabulator-Taste</li>
+    <li><strong>a:hover</strong> für Elemente, während der Benutzer mit der Maus darüber fährt</li>
+    <li><strong>a:active</strong> für gerade angeklickte Elemente ( mit gehaltener Maus-Taste)</li>
+</ol>
+
+<p>Es müssen nicht alls Pseudoklassen verwendet werden:</p>
+
+<ul>
+	<li>Entweder nur <em>a und a:hover</em> ( Datei: css_pseudoklassen1.html)</li>
+    <li>oder weitere Pseudoklassen aus der oberen Auflistung, hierbei <em>mindestens a:link, sowie eine weitere Pseudoklasse nach Wahl</em></li>
+</ul>
+
+<hr>
+
+<p><a href="#">Mein Beispiel-Link</a></p>
+
+</body>
+</html>

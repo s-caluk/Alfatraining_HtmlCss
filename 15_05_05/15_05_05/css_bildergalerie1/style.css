@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	height:60px;
+	margin-bottom:20px;
+	background-color:#CC13CB;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+div#conteiner {
+	position:relative;/* Bezugspunkt der absoluten Positionierung setzen*/
+	margin:20px auto;
+	width:700px;
+	padding:20px;
+	border:10px solid #959595;
+}
+
+p#bildbox {
+	width:460px;
+/*	height:360px;*/
+	height:400px; /*360px heigt + 40px zusätzlich fuer Bildunterschrift (em)*/
+	padding:20px;
+	background-color:#ABF5C4;
+}
+
+
+/*==========================================*/
+
+ul#vorschaubilder {
+	float:right;
+	width:128px;
+	list-style:none;
+	background-color:#E9B9EC;	
+}
+
+ul#vorschaubilder li {
+	float:left;
+	width:60px;
+/*	height:48px;*/
+	margin:2px;
+	background-color:#A5D1F5;
+}
+
+ul#vorschaubilder li a {
+	display:block; 
+	/*height:inherit;*/
+	text-decoration:none;
+	text-indent:-9999px;
+	height:48px;
+	background-color:#DDEFA4;
+}
+
+ul#vorschaubilder li a:hover {
+	background-color:#D78705;
+}
+
+/*----------kleine Vorschaubilder in der Liste------------*/
+
+ul#vorschaubilder li a.blume1 {
+	background-image:url(css_bildergalerie/blumenbilder/01pic.jpg);
+}
+
+ul#vorschaubilder li a.blume2 {
+	background-image:url(css_bildergalerie/blumenbilder/02pic.jpg);
+}
+
+ul#vorschaubilder li a.blume3 {
+	background-image:url(css_bildergalerie/blumenbilder/03pic.jpg);
+}
+
+ul#vorschaubilder li a.blume4 {
+	background-image:url(css_bildergalerie/blumenbilder/04pic.jpg);
+}
+
+ul#vorschaubilder li a.blume5 {
+	background-image:url(css_bildergalerie/blumenbilder/05pic.jpg);
+}
+
+ul#vorschaubilder li a.blume6 {
+	background-image:url(css_bildergalerie/blumenbilder/06pic.jpg);
+}
+
+ul#vorschaubilder li a.blume7 {
+	background-image:url(css_bildergalerie/blumenbilder/07pic.jpg);
+}
+
+ul#vorschaubilder li a.blume8 {
+	background-image:url(css_bildergalerie/blumenbilder/08pic.jpg);
+}
+
+ul#vorschaubilder li a.blume9 {
+	background-image:url(css_bildergalerie/blumenbilder/09pic.jpg);
+}
+
+ul#vorschaubilder li a.blume10 {
+	background-image:url(css_bildergalerie/blumenbilder/10pic.jpg);
+}
+
+/*----------grosse Bilder im Span-----------*/
+
+/*----------span im Normalzustand des Links verstecken-----------*/
+
+ul#vorschaubilder li a span {
+	display:none;
+}
+
+/*----------span bei a:hover zeigen----------*/
+
+ul#vorschaubilder li a:hover span {
+	position:absolute;
+	top:100px;
+	left:20px;
+	display:block;
+	width:500px;
+	text-indent:0px;
+	background-color:#99F0FB;
+}
+
+ul#vorschaubilder li a span em {
+	display:block;
+	height:30px;
+	padding:5px;
+	font-style:normal;
+	color:#099032;
+}
+

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS float und overflow</title>
+<link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="container">
+
+    <h1>floats anpassen mit <em>overflow</em></h1>
+ 
+ 	<ul id="navi">
+    	<li><a href="#raster1">Raster 1</a></li>
+        <li><a href="#raster2">Raster 2</a></li>
+        <li><a href="#raster3">Raster 3</a></li>
+        <li><a href="#raster4">Raster 4</a></li>
+        <li><a href="#raster5">Raster 5</a></li>
+    </ul>
+    
+    <h2>Lösung:</h2>
+    
+    <p><strong>overflow:auto;</strong><br>
+	Automatische Anpassung der Höhe von &lt;ul&gt; (= blaue Hintergrundfarbe) an die floats (welche nicht im normalen Elementfluss liegen), man spart sich die Angabe einer festen Höhe</p>
+    
+</div>
+
+</body>
+</html>

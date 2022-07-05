@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Testlayout</title>
+<style type="text/css">
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, Gotham, "Helvetica Neue", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	height:70px;
+	margin-left:375px;
+	background-color:#E1B005;
+}
+
+div#container {
+	margin:30px auto;
+	width:900px;
+	border:2px solid #767575;
+}
+
+div.head {
+	height:90px;
+	background-color:#9A9A9A;
+}
+
+ul li {
+	list-style:none;
+}
+
+/*Hauptnavigation*/
+
+ul.navi {
+	height:50px;
+/*	background-color:#D5D0D0;*/
+}
+
+ul.navi li {
+	float:left;
+	width:180px;
+	height:30px;
+	background-color:#C88126;
+}
+
+ul.navi li a {
+	display:block;
+	padding:6px;
+	text-decoration:none;
+	text-align:center;
+	color:#56380C;
+	background-color:#F3C115;
+}
+
+ul.navi li a:hover {
+	color:#E7BE48;
+	background-color:#80510C;
+}
+
+/* ENDE Hauptnavigation*/
+
+div#content {
+	margin:20px;
+	background-color:#E4E2E2;
+}
+
+div#links {
+	float:left;
+	width:350px;
+	height:200px;
+	border:2px solid #F51317;
+	background-color:#704F35;
+}
+
+div#rechts {
+	float:right;
+	width:450px;
+	padding:15px;
+	border:2px solid #F51317;
+}
+
+div#footer {
+	height:55px;
+	background-color:#185267;
+}
+
+.floatstop {
+	clear:both;
+}
+
+
+</style>
+</head>
+<body>
+
+<div id="container">
+
+	<div class="head">
+    </div>
+    
+  <ul class="navi">
+    	<li><a href="#">Punkt 1</a></li>
+        <li><a href="#">Punkt 2</a></li>
+        <li><a href="#">Punkt 3</a></li>
+        <li><a href="#">Punkt 4</a></li>
+        <li><a href="#">Punkt 5</a></li>
+    </ul>
+    
+    <div id="content">
+    	
+        <h1>Testlayout</h1>
+    	
+        <div id="links">
+        	<h2>Noch eine Überschrift 2. Ordnung</h2>
+            
+            <ul>
+            	<li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            
+        </div>
+        
+        <div id="rechts">
+        	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+    
+    <p class="floatstop">&nbsp;</p>
+    
+    </div>
+
+	<div id="footer"></div>	
+    
+</div>
+
+</body>
+</html>

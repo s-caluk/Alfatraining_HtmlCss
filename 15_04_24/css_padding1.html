@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS margin 1</title>
+<style type="text/css">
+/*alle automatischen Aussenabstande des Browsers auf NULL setzen:*/
+* {
+	margin:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	margin-bottom:30px;
+	background-color:#BEBEBE;
+}
+
+p {
+	margin-bottom:20px;
+}
+	
+div#container {
+	margin:20px auto;
+	width:800px;
+	/*padding:30px;*/
+	padding:30px 30px 10px 30px; /*20px am unteren Rand abgezogen, weil p-Absatz ein margin-bottom von 20px mit sich bringt.*/
+	border:10px solid #D4D4D4;
+	background-color:#A4ECFB;
+}
+
+p.beispiel {
+	padding:10px;
+	color:#601BDF;
+	background-color:#FBFCCC;
+}
+
+</style>
+</head>
+<body>
+
+<div id="container">
+
+<h1>CSS padding 1 (Innenabstand) </h1>
+
+<p>Padding ist ein erzwungener Leerraum zwischen dem Inhalt eines Element und seinem eigenen Elementrand</p>
+
+<p>padding ist sinnvoll für alle HTML-Elemente, die einen Absatz erzeugen, bzw. einen Block bilden, z.B.: h1-h6, div, ul, ol, dl, li, dt, dd, p, figure,...</p>
+
+<p>Es lassen sich 4 Abstände definieren: padding-top, padding-right, padding-bottom, padding-left, sowie eine allgemeine Angaben padding.</p>
+
+<p>Erlaubtsind numerische Angaben (px,em), % und auto</p>
+
+<p class="beispiel">Hier im Beispiel bekommt der div#container ein padding von 30px nach allen Seiten. Durch diese "Innenauspolsteurung" werden alle im Container liegenden Elemente 30 px vom Rand des Containers abgehalten.</p>
+
+<p class="beispiel"> Durch Zugabe von padding wähst ein Element, wenn es die Angabe einer festen Breite oder höhe besitzt. der div#container ist mit einer Breite von 800px definiert und besitzt nach Zugabe von padding nun eine Gesamtbreite von 860px</p>
+
+<p class="beispiel">Besitzt eine Element keine feste Breite, bzw. Höhe, so wird es durch Zugabevon padding <strong>nicht vergrößert</strong>. Hier im Beispiel an der Klasse p.beispiel zu sehen: Nach Zugabe von padding wird der Text weiter nach innen verdrängt, die box (p) wähst nicht in die Breite.</p>
+
+<p class="beispiel">Nach Zugabe von border vergrößert sich die Gesamtbreite von div#conteiner auf 800px.</p>
+
+</div>
+</body>
+</html>

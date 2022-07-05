@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS margin 1</title>
+<style type="text/css">
+/*alle automatischen Aussenabstande des Browsers auf NULL setzen:*/
+* {
+	margin:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	margin-bottom:30px;
+	background-color:#71F87C;
+}
+
+p {
+	margin-bottom:20px;
+}
+	
+p.eins {
+	margin-left:100px;
+	background-color:#A84EC5;
+}
+
+p.zwei {
+	margin-top:100px;
+	background-color:#46D9FF;
+}
+
+p.drei {
+	/*margin-top:50px;
+	margin-right:500px;
+	margin-bottom:50px;
+	margin-left:350px;*/
+	margin:50px 500px 50px 350px;  /*Kurzschreibweise fuer margin, alle 4 Seiten unterschiedlich*/
+	background-color:#F49001;
+}
+
+p.vier {
+	margin:50px; /*Kurzschreibweise fuer margin, alle 4 Seiten gleich*/
+	background-color:#36EB4A;
+}
+	
+
+</style>
+</head>
+<body>
+
+<h1>CSS margin 1 (Aussenabstand)</h1>
+
+<p>margin ist ein erzwungener Leerraum zwischen dem aktuellen Element und seinem Eltern-Element (wenn eingebettet), oder seinem Nachbar-Element.</p>
+
+<p>margin ist sinnvoll für alle HTML-Elemente, die einen Absatz erzeugen, bzw. einen Block bilden, z.B.: h1-h6, div, ul, ol, dl, li, dt, dd, p, figure,...</p>
+
+<p>Es lassen sich 4 Abstände definieren: margin-top, margin-right, margin-bottom, margin-left, sowie eine allgemeine Angaben margin.</p>
+
+<p>Wenn für einen Abstandsbereich 2 Definitionen vorliegen (z.B. margin-bottom des oberen und margin-top des unteren Elements), so wird die Angabe mit dem <strong>grössten Abstand</strong> berechnet, die andere entfällt.</p>
+
+<hr>
+
+<p class="eins">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<p class="zwei">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<p class="drei">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<p class="vier">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+</body>
+</html>

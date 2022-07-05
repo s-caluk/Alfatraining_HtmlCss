@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS3 Bewegung mit Keyframes</title>
+<style>
+
+body {
+	color:#FFFFFF;
+	background-color:#666;
+}
+
+#container {
+	margin:0px auto;
+	width:80%;
+	padding:25px;
+	border:2px solid #FFFFFF;
+}
+
+hr {
+	color:#FFFFFF;
+}
+
+/*++++++++++++++++Formatierung der div-box+++++++++++++++++++++++++*/
+
+.animated { 
+	width:300px;
+	height:300px;
+	-webkit-animation:ease-in-out 2s;
+	animation:ease-in-out 2s;
+	background-image:url(stempel.png);
+} 
+
+/*++++++++++++++++Definition Keyframe Klassen-Name+++++++++++++++++++++++++*/
+
+.bewegung { 
+    -webkit-animation-name: bewegung; 
+    animation-name: bewegung;
+}
+
+/*++++++++++++++++Formatierung der Bewegung X/Y+++++++++++++++++++++++++*/
+
+@keyframes bewegung { 
+
+    0% { 
+        transform: translateY(0px); 
+    } 
+	
+    50% { 
+        transform: translateY(0px);
+    } 
+	
+    80% { 
+        transform: translateY(0px);
+	}
+	
+ 	100% { 
+        transform: translateY(0px);
+	} 
+} 
+
+</style>
+</head>
+
+<body>
+
+<div id="container">
+
+	<h1>CSS3 Bewegung mit Keyframes</h1>
+    
+	<div class="animated bewegung"></div>
+    
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+    
+    
+    <p>by Jürgen Sütterlin</p>
+
+</div>
+
+</body>
+</html>

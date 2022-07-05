@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS position absolute</title>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+div {
+	width:180px;
+	height:180px;
+	padding:10px;
+	border:1px solid #000000;
+}
+
+div#rot {
+	position:absolute;
+	top:50px;
+	left:50px;
+	background-color:#FF0004;
+}
+
+div#blau {
+	position:absolute;
+	right:25px;
+	top:25px;
+	background-color:#4C82FF;
+}
+
+div#gruen {
+	position:absolute;
+	left:150px;
+	bottom:50px;
+	background-color:#3FB308;
+}
+
+div#gelb {
+	position:absolute;
+	right:125px;
+	bottom:25px;
+	background-color:#F0FF00;
+}
+
+</style>
+</head>
+<body>
+
+<h1>CSS position absolute</h1>
+
+<div id="rot"></div>
+
+<div id="blau"></div>
+
+<div id="gruen"></div>
+
+<div id="gelb">
+	<p>Absolut positionierte Elemente sind aus dem normalen Elementfluss herausgenommen und liegen auf einer eigenen Ebene. Die gelbe Box liegt oben, da im HTML zuletzt aufgerufen.</p>
+</div>
+
+<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+</body>
+</html>

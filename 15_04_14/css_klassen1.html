@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS Klassen 1</title>
+<link href="css_klassen1.css" rel="stylesheet" type="text/css">
+</head>
+
+<h1>CSS Klassen 1</h1>
+
+<p class="merksatz">Es gibt 2 möglichkeiten, Klassen für HTML-Elemente zu notieren:</p>
+
+<ol>
+	<li>Für keinen bestimmten HTML-Typ (freie Klasse)</li>
+    <li>Für ein bestimmtes HTML-Element</li>
+</ol>
+
+<p class="merksatz">Klassen können jedem HTML-Element im öffenden tag mitgegeben werden. Sie dienen dazu, Elemente voneinander unterscheiden zu können, wenn durch den Typ-Selektor, sowie die Pfad-Schreibweise keine genaue Differenzierung möglich ist.</p>
+
+<p class="merksatz">Klassen werden im CSS durch einen <strong>Punkt</strong> notiert, danach folgt der Name der Klasse. Dieser Name darf frei gewählt werden, darf jedoch:</p>
+
+<ul>
+	<li>keine Leerzeichen enthalten</li>
+    <li>keine Umlaute oder Sonderzeichen enthalten</li>
+    <li>nicht mit einer Ziffer, einem Unter- oder Binderstrich beginnen</li>
+    <li>nicht zu lang sein</li>
+</ul>
+
+<hr>
+
+<p>Alle Textabsätze haben eine gelbe Hintergrundfarbe, formatierung über den <strong>Typ-Selektor</strong>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<p class="blau">Alle Textabsätze haben eine gelbe Hintergrundfarbe, formatierung über den <strong>Typ-Selektor</strong> Dieser Textabsatz erhielt die <strong>Klasse .blau</strong> welche nun eine blaue Hintergrundfarbe liefert:Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<p>Alle Textabsätze haben eine gelbe Hintergrundfarbe, formatierung über den <strong>Typ-Selektor</strong>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum <span class="blau"> ein Bereich mit blauem Hintergrund</span> dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore <em class="blau">magna aliquyam erat, sed diam voluptua</em>. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+
+<h2 class="blau">Eine h2-Überschrift mit der Klassse .blau</h2>
+
+<h3 class="merksatz">Eine h3-Überschrift mit der Klasse .merksatz? <br>
+NEIN! Denn die Klasse .merksatz ist nur im HTML-Typ p verwendbar</h3>
+<body>
+</body>
+</html>

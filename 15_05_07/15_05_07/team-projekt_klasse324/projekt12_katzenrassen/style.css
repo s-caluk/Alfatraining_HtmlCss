@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Helvetica, Gotham, "Helvetica Neue", Arial, sans-serif;
+	font-size:16px;
+}
+
+/*		Farbe zum Testen ob Style verknüpft ist*/
+h1 {
+	color:#FFFFFF;
+	height:210px;
+	text-indent:-9999px;
+	background-image:url(bilder/hg_h1.jpg);
+}
+
+h2 {
+	border-radius:20px 0px 20px 0px;
+	margin-bottom: 10px;
+	padding: 5px;
+	width:600px;
+	text-align:center;
+	color: #F0DFCA;
+	background-color: #462700;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+p strong {
+	color:#462700;
+}
+
+p#footer {
+	border-radius:20px 0px 20px 0px;
+	clear:both;
+	padding:10px;
+	text-align:center;
+	color: #F0DFCA;
+	background-color: #462700;
+}
+
+div#container {
+	border-radius:0px 0px 20px 20px;
+	border: 2px solid #462700;
+	width:760px;
+	text-align:center;
+ 	margin:0 auto;
+	padding:5px;
+	background-color:#f0dfca;
+}
+
+img {
+	border-radius:20px 0px 20px 0px;
+	border: 1px solid #462700;
+	}
+
+/*		Obere Navigation, berühmte Katzenrassen*/
+ul {
+	margin-bottom:50px;
+	list-style:none;
+}
+
+
+ul#navi li{
+	border-radius:0px 0px 20px 20px;
+	float: left;
+	width: 190px;
+	height: 30px;
+	background-color: #462700;
+}
+
+ul#navi li a {
+	display:block;
+	padding:5px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+
+ul#navi li a:hover {
+	border-radius:0px 0px 20px 20px;
+	color:#462700;
+	background-color:#FFFFFF;
+}
+
+
+
+/*		Bildergalerie*/	
+ul#galerie {
+	height:100px;
+	margin-bottom:30px;
+	margin-left:70px;
+}
+
+ul#galerie li{
+	float: left;
+	width:100px;
+	height:100px;
+	margin:25px;
+}
+
+ul#galerie li a {
+	display:block;
+	padding:35px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#462700;
+	text-indent:-9999px;
+}
+	
+
+ul#galerie li a.bengal {
+	background-image:url(bilder/pic1_klein_bengal.png);
+}
+
+ul#galerie li a:hover.bengal {
+	background-image:url(bilder/pic1_gross_bengal.png);
+}
+
+ul#galerie li a.hauskatze {
+	background-image:url(bilder/pic2_klein_hauskatze.png);
+}
+
+ul#galerie li a.perser {
+	background-image:url(bilder/pic3_klein_perser.png);
+}
+
+ul#galerie li a:hover.perser {
+	background-image:url(bilder/pic3_gross_perser.png);
+}
+
+
+ul#galerie li a.deutschlanghaar {
+	background-image:url(bilder/pic4_klein_deutschlanghaar.png);
+}
+
+/*---grosse Bilder anzeigen---*/
+
+ul#vorschaubilder li a span {
+	display:none;}		/* Bilder verstecken*/
+
+ul#vorschaubilder li a:hover span {
+	display:block;		
+	position:absolute; 	
+	top:451px;
+	left:207px;
+	width:500px;
+	text-indent:0px;}

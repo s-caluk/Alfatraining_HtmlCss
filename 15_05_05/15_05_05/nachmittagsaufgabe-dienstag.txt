@@ -1,0 +1,5 @@
+CSS Bildergalerie in eine vorhandene Webseite einbauen.
+Bitte keine 1zu1 Kopie sondern die Bildvorschau und die Bildbox selbst definieren und anpassen.
+Zuerst die Galerie mit Hintergrundfarben aufbauen - wenn alles an der richtigen Stelle "hovert" die background-color mit background-image erweitern.
+
+Viel Spass bei der Übung

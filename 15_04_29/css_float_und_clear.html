@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS float und clear</title>
+<style type="text/css">
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:20px;
+}
+
+div#eins {
+	float:left;
+	width:150px;
+	height:80px;
+	padding:5px;
+	background-color:#FF6600;
+}
+
+div#zwei {
+	float:right;
+/*	clear:left;*/
+	width:150px;
+	height:80px;
+	padding:5px;
+	background-color:#00CCFF;
+}
+
+div#drei {
+	float:left;
+/*	clear:left;*/
+	width:150px;
+	height:150px;
+	padding:5px;
+	background-color:#33FF00;
+}
+
+div#vier {
+	float:right;
+/*	clear:right;*/
+	width:150px;
+	height:80px;
+	padding:5px;
+	background-color:#CCCCCC;
+}
+
+div#fuenf {
+	float:left;
+/*	clear:right;*/
+	width:150px;
+	height:80px;
+	padding:5px;
+	background-color:#9900CC;
+}
+
+div#sechs {
+	float:left;
+/*	clear:left;*/
+	width:150px;
+	height:80px;
+	padding:5px;
+	background-color:#FFFF00;
+}
+
+</style>
+</head>
+<body>
+
+<h1>CSS float und clear</h1>
+
+<div id="eins">
+	<p><strong>1</strong> float:left;</p>
+</div>
+
+<div id="zwei">
+	<p><strong>2</strong> float:right; clear:left;</p>
+</div>
+
+<div id="drei">
+	<p><strong>3</strong> float:left; clear:left;</p>
+</div>
+
+<div id="vier"><strong>4</strong> float:right; clear:right;</div>
+
+<div id="fuenf">
+	<p><strong>5</strong> float:left; clear:right;
+</div>
+
+<div id="sechs">
+	<p><strong>6</strong> float:left; clear:left;</p>
+</div>
+
+</body>
+</html>

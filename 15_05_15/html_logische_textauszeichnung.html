@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML Logische Textauszeichnung</title>
+</head>
+<body>
+
+<h1>HTML Logische Textauszeichnung</h1>
+
+<p>Im früheren HTML wurde eine <em>physische Textauszeichnung</em> verwendet. Diese diente rein der Optik und ermöglichte es beispielsweise, Elemente zu unterstreichen, oder mit fetter Schrift zu versehen. Mit der Einführung von CSS ist dies überflüssig geworden; CSS läst sich auch deutlich einfacher formatieren und trennt Design vom Inhalt, was dem HTML Markup zu gute kommt.</p>
+
+<p>Im heutigen HTML sollten deshalb nur noch <em>semantische Auszeichnungen</em> verwendet werden, die einer Logik, einer Bedeutung unterliegen. Bei der logischen Textauszeichnung entscheidet der Browser, wie ein Element dargestellt wird. Das Standard-Aussehen der tags kann über CSS formatiert werden, jedoch ist die noch nicht bei allen neuen HTML5-Elementen sinnvoll, da diese nicht von jedem Browser interpretiert werden.</p>
+
+<hr>
+
+<h2>Aus dem HTML4 übernommen:</h2>
+
+<p>Ein Beispieltext mit <code>Quellcode</code> und wieder normal</p>
+
+<p>Ein Beispieltext mit <dfn>einer Definition</dfn> und wieder normal</p>
+
+<p>Ein Beispieltext mit <em>einer stärkeren Betonung (engl. emphasis)</em> und wieder normal</p>
+
+<p>Ein Beispieltext mit <strong>einem wichtigen Inhalt</strong> und wieder normal</p>
+
+<p>Ein Beispieltext mit <q>einem kurzen Zitat</q> und wieder normal</p>
+
+<p>Ein Beispieltext mit <cite>einer Quelle oder einem Autor</cite> und wieder normal</p>
+
+<p>Mit dem tag &lt;blockquote&gt; können (längere) Zitate beschrieben werden. Zusätzlich kann im einleitenden blockquote-tag das Attribut "cite" verwendet werden, um den Autor des Zitats auszugeben. ("cite" ist als tag, sowie als Attribut im HTML vorhanden).</p>
+
+<blockquote cite="Lorem Ipsum-Genrator.de">
+	<p>Lorem ipsum</p>
+</blockquote>
+
+<p>Der blockquote-tag wird standardmässig etwas eingerückt.</p>
+
+<h2>Neue tags, die im HTML5 dazu kommen:</h2>
+
+<p>&lt;figure&gt; Dieser tag enthält eine oder mehrere Grafiken, sowie optional eine Beschreibung.</p>
+
+<p>&lt;figcaption&gt; Beschreibung der Grafik(en), welche über den figure-tag definiert wurde(n).</p>
+
+<p>&lt;nav&gt; Dieser tag beschreibt eine Navigation.</p>
+
+<p>&lt;header&gt; Dieser tag beschreibt einen Kopfbereich.</p>
+
+<p>&lt;section&gt; Dieser tag beschreibt einen Abschnitt/Textbereich.</p>
+
+<p>&lt;aside&gt; Dieser tag beschreibt ein Seitenelement/sidebar.</p>
+
+<p>&lt;details&gt; Dieser tag beschreibt Details eines Seitenelements.</p>
+
+<p>&lt;article&gt; Dieser tag beschreibt einen Artikel, z.B. in einem Blog.</p>
+
+<p>&lt;footer&gt; Dieser tag beschreibt einen Fußbereich.</p>
+
+</body>
+</html>

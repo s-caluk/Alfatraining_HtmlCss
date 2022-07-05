@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	margin:30px;
+}
+h2 {
+	margin:30px;
+}
+p {
+	margin:30px;
+}
+
+
+div#conteiner {
+	margin:20px auto;
+	width:800px;
+	padding:30px;
+	border:2px dotted #3D3D3D;
+}
+
+div#content {
+	margin-right:354px;
+/*	background-color:#5CFCF4;*/	
+}
+
+div#tageszeitenbild {
+	float:right;
+	width:296px;
+/*	height:414px;*/
+	padding-top:420px;
+	border:10px solid #FFFFFF;
+	font-family:"Courier New", Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco,  monospace;
+	background-repeat:no-repeat;
+	color:#464545;
+	background-color:#FFFFFF;
+}
+
+/*einzelne Klassen je nach Tageszeit, Welche ueber das Skript tageszeiten. js aufgerufen werden:*/
+
+body.morgen {
+	background-color:#E9D2D2; /*red*/
+}
+
+.morgenbild {
+	background-image:url(bilder/morgen.jpg);
+}
+
+body.mittag {
+	background-color:#A0E8F4; /*blau*/
+}
+
+.mittagbild {
+	background-image:url(bilder/mittag.jpg);
+}
+
+body.nachmittag {
+	background-color:#98F095; /*gruen*/
+}
+
+.nachmittagbild {
+	background-image:url(bilder/nachmittag.jpg);
+}
+
+body.abend {
+	background-color:#AAA7A7; /*grau*/
+}
+
+.abendbild {
+	background-image:url(bilder/abend.jpg);
+}
+
+body.nacht {
+	color:FFFFFF;
+	background-color:#000000; /*grau*/
+}
+
+.nachtbild {
+	background-image:url(bilder/nacht.jpg);
+}

@@ -1,0 +1,102 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+	background-image:url(bilder/verlauf_300y.jpg);
+	background-repeat:repeat-x;
+	background-attachment:fixed;
+	background-position:bottom;	
+}
+
+h1 {
+	padding:50px;
+	text-align:center;	
+}
+
+h2 {
+	padding:30px;	
+}
+
+div#con {
+	width:800px;
+	margin:50px auto 50px auto;
+	padding:40px;
+	background-color:#BFFCE1;
+
+}
+
+/*=====================================*/
+
+ul#link {
+	margin:auto 50px auto 50px;
+	list-style:none;
+	/*background-color:#E37C0A;*/ 
+}
+
+ul#link li {
+	display:inline;
+	margin:15px;
+	padding:10px;
+	background-color:#F59902;  /*orange*/
+}
+
+ul#link li a {
+	padding:5px;
+	text-decoration:none;
+}
+
+ul#link li a:hover {
+	color:#FFFFFF;
+	background-color:#056B20;/*gruen*/
+}
+
+ul#link li a.active {
+	cursor:default;
+	color:#FFFFFF;
+	background-color:#056B20; 
+}
+	
+/*========================================*/
+	
+div#boxleft1 {
+	float:left;
+	width:300px;
+	height:300px;
+	margin:auto 20px 20px auto;	
+	background-image:url(bilder/08.jpg);
+	
+}
+
+div#boxright1 {
+	float:right;
+	width:100px;
+	height:200px;
+	margin:auto auto 30px 30px;
+	background-image:url(bilder/04pic.jpg);
+}
+
+div#boxleft2 {
+	float:left;
+	width:200px;
+	height:100px;
+	margin:30px 30px auto auto;
+	background-image:url(bilder/07pic.jpg);
+	background-position:bottom left;
+	
+}
+
+div#boxright2 {
+	float:right;
+	width:300px;
+	height:300px;
+	margin:30px;
+	background-image:url(bilder/05.jpg);
+	background-position:bottom right;	
+}

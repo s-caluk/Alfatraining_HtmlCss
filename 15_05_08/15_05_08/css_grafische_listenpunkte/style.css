@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	margin-bottom:20px;
+}
+
+h2 {
+	margin-bottom:10px;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+ul {
+	margin:0px 0px 40px 60px;
+}
+
+/*------------------------------------------
+---- Formatierung mit background-image -----
+------------------------------------------*/
+ul#blume {
+	width:240px;
+	list-style:none;
+	/*background-color:#0A81FF;*/
+}
+
+ul#blume li {
+	margin-bottom:10px;
+	background-color:#F94548;
+}
+
+ul#blume li a {
+	display:block;
+	padding:3px 3px 3px 30px;
+	text-decoration:none;
+	color:#000000;
+	background-image:url(bilder/05green_sm.jpg);
+	background-repeat:no-repeat;
+	background-color:#A7FC92;
+}
+
+ul#blume li a:hover {
+	padding:3px 30px 3px 3px;
+	text-align:right;
+	background-image:url(bilder/05red_sm.jpg);
+	background-position:top right;
+	background-color:#FF97E1;
+}
+
+/*------------------------------------------
+---- Formatierung mit list-style-image -----
+------------------------------------------*/
+ul#flower {
+	width:240px;
+	/*list-style:none;*/ /*Listenausehen NICHT entfernen*/
+	/*background-color:#0A81FF;*/
+}
+
+ul#flower li {
+	margin-bottom:10px;
+	list-style-image:url(bilder/05green_sm.jpg);
+	background-color:#F94548;
+}
+
+ul#flower li a {
+	display:block;
+	padding:3px 3px 3px 30px;
+	text-decoration:none;
+	color:#000000;
+	background-color:#A7FC92;
+}
+
+ul#flower li a:hover {
+	padding:3px 30px 3px 3px;
+	text-align:right;
+	background-color:#FF97E1;
+}

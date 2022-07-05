@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML formulare</title>
+<style type="text/css">
+
+.courier {
+	margin-left:40px;
+	font-family:"Courier New", Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, monospace;
+	font-size:18px;
+	font-weight:bold;
+	color:#535353;
+}
+
+</style>
+</head>
+<body>
+
+<h1>HTML Formulare</h1>
+
+<form action="meinscript.php" method="post" name="kontaktformular">
+	<h2>Ein HTML-Formular mit dem &lt;form&gt;-tag</h2>
+    
+    <p class="courier">Innerhalb des &lt;form&gt;-tag können alle bekannten HTML-Elemente verwendet werden. Die speziellen Formular-Elemente <em>MUSSEN</em> innerhalb dieses tags stehen, damit sie funktionieren.</p>
+    
+    <p class="courier"> Die <em>form action </em> wird in dem Moment ausgelöst, in dem der Anwender den Absende-Button vom Typ <em>submit</em> klickt. <br>
+    (Diese formular lässt sich jedoch mangels PHP-Skript nicht absenden , da hier nur als Beispiel eingetragen...)</p>
+    
+    <fieldset>
+    	<legend>Ihre Adressendaten:</legend>
+  
+        
+    <p>
+    
+    	<label for="anrede">Bitte Anrede auswählen:</label>
+        
+    	<!--auswahlliste-->
+    	<select name="anrede" id="anrede">
+        	<option>Herr</option>
+            <option>Frau</option>
+        </select>
+    </p>
+    
+    <p>
+    	<label for="vorname">Vorname: </label>
+    	<!--Einzeiliger Eingabebereich-->
+    	<input type="text" name="vorname" id="vorname">    
+    </p>
+    
+    <p>
+    	<label for="nachname">Nachname:</label>
+    	<input type="text" name="nachname" id="nachname">    
+    </p>
+    
+    <p>
+    	<label for="strasse">Strasse und Hausnummer:</label>
+    	<input type="text" name="strasse" id="strasse">    
+    </p>
+    
+    <p>
+    	<label for="plz">Postleitzahl:</label>
+    	<input type="text" name="plz" id="plz">    
+    </p>
+    
+    <p>
+    	<label for="ort">Ort:</label>
+    	<input type="text" name="ort" id="ort">    
+    </p>
+    
+    <p>
+    	<label for="email">Email:</label>
+    	<input type="text" name="email" id="email">    
+    </p>
+    
+    <p>(* = Pflichtangabe)</p>
+    
+    </fieldset>
+    
+    <p class="courier"> Der HTML-tag &lt;label&gt; dient dazu, Zusammengehörigkeit zwischen einem Formularfeld und dessen Beschriftung herzustellen und hilft sehbehinderten Nurtzern, sich zurech zu finden. <br>
+   Das Attribut "for" muss die gleiche Bezeichnung erhalten, Wie die Formularfeld zugewiesende id.</p>
+    
+    <p class="courier">Ein &lt;fieldset&gt; fasst &ndash; ähnlich wie bei einem div &ndash; Bereiche zusammen. Durch die Legende &lt;legend&gt; liefert es noch etwas mehr Gestaltung mit. Je nach Design-Wunsch können Bereiche im Formular ebenso mit divs gestaltet werden.</p>
+    
+    <fieldset>
+    	<legend>Ihr Anliegen:</legend>
+        <p>
+        	<label for="nachricht">Platz für ihre Nachricht </label>
+            <!--mehrzeiliger Eingabebereich-->
+            <textarea name="nachricht" id="nachricht">*</textarea>
+        
+        </p>
+        
+        <p class="courier"> bei der textarea wird das trenchen für die Pflichtangabe (oder anderer Text) ZWISCHEN die tags geschrieben. <br>
+        Größe der Textbox per CSS bestimmen, damit diese nicht zu klein wird.</p>
+        
+        <p>Möchten Sie unseren Newsletter bestellen?</p>
+        
+        <p>
+        	<label for="newsletter-ja">Ja, gerne!</label>
+            <input type="radio" id="newsletter-ja" name="newsletter">        
+        </p>
+        
+         <p>
+        	<label for="newsletter-nein">Nein, danke!</label>
+            <input type="radio" id="newsletter-nein" name="newsletter">        
+        </p>
+        
+        <p class="courier">radio-Buttons:<br>
+        Der Anwender MUSS genau EIN Element auswählen; mehrere oder gar keines funktioniert nicht.<br>
+        Deshalb unbedingt eines der Elemente vorselektieren ("checked") , damit beim Laden des Formulars eines ausgewählt ist.  
+        </p>
+        
+        <p class="courier"> Achtung: Die Bezeichnung im Attribut "name" muss bei allen Buttons die gleiche sein , um eine Zusammengehörige für die Auswahl zu schaffen. </p>
+        
+        <p>Bitte wählen Sie hier Ihre Interessen aus:</p>
+        
+        <p><label for="garten">Garten</label>
+        <input type="checkbox" id="garten" name="interessen">
+  		</p>
+        
+        <p><label for="kochen">Kochen</label>
+        <input type="checkbox" id="kochen" name="interessen">
+  		</p>
+        
+         <p><label for="urlaub">Urlaub</label>
+        <input type="checkbox" id="urlaub" name="interessen">
+  		</p>
+        
+        <p class="courier">checkboxen:<br>
+        Hier KANN der Anwender eine oder mehrere Möglichkeiten auswählen, oder gar keine &ndash; ganz wie er möchte.</p>
+    
+    </fieldset>
+    
+    <p><input type="submit" value="Und ab die Post" name="absenden"></p>
+    
+   <!-- optional, wer mochte -->
+   
+   <p><input type="reset" value="Alle Eingaben löschen" name="loeschen"</p>
+   
+   <p class="courier">Absende-Button <br>
+   Eine eigene Beschriftung kann über das Attribut "value" gegeben werden. ist dieses nicht vorhandenerscheint der Standard-Text des jeweiligen Browsers, z.B. "Daten absenden".
+   </p>
+    
+</form>
+        
+</body>
+</html>

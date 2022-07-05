@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	margin-bottom:20px;
+	background-color: #EC3033;
+}
+
+h2 {
+	margin-bottom:20px;
+	background-color: #EFE66F;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+div#container {
+	margin:20px auto;
+	width:800px;
+	padding:20px 20px 0px 20px;
+	border:2px solid #A011FF;
+}
+
+ul#navi {
+	/*height:160px;*/
+	overflow:auto;  /*Anpassung der Hoehe von ul an die floats (welche nicht im normalen Elementfluss liegen), man spart sich die Angabe einer festen Hoehe*/
+	margin-bottom:30px;
+	list-style:none;
+	background-color:#42CAFB;	
+}
+
+ul#navi li {
+	float:left;  
+	width:120px;
+	margin-right:10px;
+	background-color:#74D2D7;
+}
+
+ul#navi li a {
+	display:block;
+	/*height:120px;*/
+	padding:120px 0px 0px 5px;
+	border:2px solid #000000;
+	text-decoration:none;
+	font-size:24px;
+	color:#000000;
+	background-image: url(gestaltungsraster.png);
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-color: #A7D9AB;
+}
+
+ul#navi li a:hover {
+	background-position:50px 0px;
+	background-color:#B77509;
+}
+
+
+p#fusszeile {
+	background-color: #965CCD;
+}
+
+.floatstop {
+	clear:both;   /*beendet das Umfliessen*/
+}

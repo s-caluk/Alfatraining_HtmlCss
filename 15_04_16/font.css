@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#0A17F4; 
+}
+p.beispiel1 {
+	font:italic 20px "Courier New", Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, monospace;
+}
+p.beispiel2 {
+	font:small-caps bold 110% Georgia, Constantia, "Lucida Bright", "DejaVu Serif", serif;
+}

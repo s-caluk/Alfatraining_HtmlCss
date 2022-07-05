@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS white-space</title>
+<style type="text/css">
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica,  sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#DB3033;
+}
+
+p.vorformatiert {
+	white-space:pre;
+}
+
+p.keinumbruch {
+	white-space:nowrap;
+}
+</style>
+</head>
+<body>
+
+<h1>CSS white-space ( Textumbruch) </h1>
+
+<p>Festlegung, wie ein Zeilenumbruch innerhalb von Elementen mit Text erfolgen soll.</p>
+
+<dl>
+	<dt>normal</dt>
+    <dd>automatischer Zeilenumbruch</dd>
+    
+    <dt>pre</dt>
+    <dd>vormatiert, d.h. Zeilenumbuch wie im Editor eingegeben</dd>
+    
+    <dt>nowrap</dt>
+    <dd>kein automatischer Zeilenumbruch; Umbruch nur möglich durch &lt;br&gt;</dd>
+</dl>
+
+<hr>
+
+<p class="vorformatiert"> dieser Textabsatz besitz eine 
+	Vorformatierung über CSS mit <strong>pre</strong> 
+		dies bedeutet, dass Zeilenumbrücheund Einrückengen 
+			so dargestellt werden, 
+				wie im Editor eingegeben. 
+    		Gleichgültig, ob mit der Tab-Taste
+        eingedrück wird,
+  oder mittels Leerzeichen. </p>
+
+<hr>
+
+<p class="keinumbruch">Ein Textabsatz, der niemals umbricht:Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum <br>
+Hier ein Umbruch mit <strong>&lt;br&gt;</strong>und noch etwas Text... dolor sit amet. </p>
+
+</body>
+</html>

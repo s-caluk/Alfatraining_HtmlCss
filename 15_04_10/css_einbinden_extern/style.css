@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+/*Dies ist ein CSS-Kommentar*/
+body{
+	background-color:#BFEC8A;
+}
+h1 { 
+	color: #D8D71B;
+	background-color:#09137E;
+}
+p{
+	color: #066808;
+	background-color:#73CB6C;
+}
+strong{
+	color: #DBBB19;
+	background-color:#3D360D;
+}
+em {
+	background-color:#FFFFFF;
+}
+/*hier sind meine Listen von der Startseite*/
+
+ol {
+	background-color:#C06B18;
+}
+
+li {
+	background-color:#D42B2E;
+}
+ 
+

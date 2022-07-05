@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image:url(ratte_optimiert.jpg);
+}
+
+h1 {
+	color:#9B0FB9;
+}
+
+p.beschreibung {
+	background-color:#FFFFFF;
+}
+
+

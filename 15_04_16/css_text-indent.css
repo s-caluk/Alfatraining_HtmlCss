@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#0A17F4; 
+}
+p.einzug40px {
+	text-indent:40px;
+}
+p.einzug200px {
+	text-indent:200px;
+}
+p.einzug-20px {
+	text-indent:-20px;
+}
+p.einzug2em {
+	text-indent:2em;
+	background-color:#EED1F0;
+}
+p.einzug32px {
+	text-indent:32px;
+	background-color:#FCD1C1;
+}

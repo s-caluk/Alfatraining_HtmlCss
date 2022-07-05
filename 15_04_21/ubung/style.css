@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+	/*background-image:url(bilder/kachel-trans.png);*/
+	background-color:#FBF8D6;
+}
+
+h1 {
+	color:#D409CD;
+}
+
+p.link {
+	text-align:center;
+	background-color:#F7CBF8;
+}
+
+/*=========================================*/
+
+ul {
+	list-style:none;
+	text-align:center;
+}
+
+ul.navi {
+	width:250px;
+	list-style:none; 
+}
+
+ul.navi li {
+	background-color:#469705; 
+}
+
+ul.navi li a {
+	display:block; 
+	height:80px;   
+	/*text-indent:-9999px;*/
+	text-decoration:none; 
+	color:#FFFFFF;
+	background-color:#570266;
+}
+
+ul.navi li a:hover {
+	color:#000000;
+	background-color:#81D8F7;
+}
+
+/*=============================================*/
+ul.navi li a:hover.start {
+	text-indent:-999999px;
+	background-image:url(bilder/images.jpg);
+}
+
+ul.navi li a:hover.raster {
+	text-indent:-999999px;
+	background-image:url(bilder/raster.jpg);
+}
+
+ul.navi li a:hover.vektor {
+	text-indent:-999999px;
+	background-image:url(bilder/vektor.jpg);
+}
+ul.navi li a:hover.verwenden {
+	text-indent:-999999px;
+	background-image:url(bilder/images.jpg);
+}
+
+/*======================================================*/
+
+ul.navi li a.start-aktiv {
+	background-color:#F3C8FB;
+}
+ul.navi li a:hover.start-aktiv {
+	text-indent:-9999px;
+	background-image:url(bilder/images.jpg);
+}
+
+/*======================================================*/
+
+ul.navi li a.raster-aktiv {
+	background-color:#F3C8FB;
+}
+ul.navi li a:hover.raster-aktiv {
+	text-indent:-9999px;
+	background-image:url(bilder/raster.jpg);
+}
+
+/*======================================================*/
+
+ul.navi li a.vektor-aktiv {
+	background-color:#F3C8FB;
+}
+
+ul.navi li a:hover.vektor-aktiv {
+	text-indent:-9999px;
+	background-image:url(bilder/vektor.jpg);
+}
+
+/*======================================================*/

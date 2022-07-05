@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+/*Dies ist ein CSS-Kommentar*/
+body {
+	background-color:#E2F5FB;
+}
+h1 { 
+	color: #2A12FB;
+}
+h2 { 
+	color: #05C76A;
+}
+
+p{
+	color: #066808;
+}
+strong {
+	color:#0B0B0B;
+}
+em {
+	color:#6B0608;
+}
+ol {
+	color:#A90A0C;
+}
+
+li {
+	color:#F5950B;
+}
+figcaption {
+	color:#9C0792;
+}
+ 
+

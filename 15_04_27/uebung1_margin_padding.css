@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+div#blau {
+	margin:20px auto;
+	width:800px;
+	padding-left:50px;
+	padding-bottom:50px;
+	background-color:#266DFB;
+}
+
+div#weiss {
+	padding-left:50px;
+	padding-bottom:50px;
+	background-color:#D0C8C8;
+}
+
+div#rot {
+	padding:25px 25px 1px 25px;
+	background-color:#FF0004;
+}
+
+div.gruen {
+	height:30px;
+	margin-bottom:25px;
+	background-color:#1C9A0D;
+}
+
+/*Bemerkung:
+Die gruenen Elemente haben jeweils einen Abstand nach unten (margin-bottom:25px).
+
+Das letzte gruene Element erzeugt diesen Abstand ebenfalls und trifft auf das padding-bottom des roten Elements. Der untere Rand des roten Elements betraegt dadurch 25+25=50px, d.h. er ist zu gross.
+
+Moegliche Abhilfen gibt es mehrere, z.B.:
+
+1.) padding-Rand des roten Elements unten auf nur noch 1px setzen (1px+25px=26px) und so den Rand optisch anpassen. Der eine Pixel ist notwendig, damit das margin-bottom von div.gruen ueberhaupt zum Tragen kommmt, bei 0px wuerde es entfallen.
+
+2. Alternativ eine eigene Klasse definieren fuer das letzte gruene Element (div.gruen-letztes) und darin nur Hoehe und Farbe, aber KEIN margin-bottom vergeben.*/
+

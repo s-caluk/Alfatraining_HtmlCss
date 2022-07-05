@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS verschachteln</title>
+<link href="css_verschachteln.css" rel="stylesheet" type="text/css">
+</head>
+
+<h1>CSS verschachteln</h1>
+
+<p>Die beiden Listen, &lt;ul&gt; und &lt;ol&gt;, besitzen beide Listenpunkte (li).<br>
+Mit einer CSS-Formatierung soll nun erreicht werden, dass Listenpunkte, welche in einer &lt;ul&gt; stehen, mit roter Farbe formatiert werden.</p>
+
+<p>Dies wird durch die <strong>Pfad-Schreibtweise</strong> am einfachsten erreicht. Listenpunkte, welche in der &lt;ul&gt; stehen, werden in roter Schriftfarbe dargestellt, Listenpunkte in der  &lt;ol&gt; sind nicht betroffen. </p>
+
+<ul>
+	<li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+</ul>
+
+<ol>
+	<li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+</ol>
+
+<hr>
+
+<p>Hier wieder eine &lt;ul&gt; als Ausgangsbasis. <br>
+Die rote Schriftfarbe wird so lange an die Kind-Elemnete weiter vererbt, bis eine neue Formatierung erfolg, welche die Farbe ändert: Ab der 3. &lt;ul&gt; wird eine neue Hintergrundfarbe gegeben, grün für die Liste, violett  für die Listenpunkte.</p>
+
+<p>Sämtliche Farben werden so lange weiter vererbt, bis sie von anderen überschrieben werden. Die violette Hintergrundfarbe für Listenpunkte wird ab der 3. Liste an alle weiteren  &lt;li&gt; vererbt. Ab der 5. Liste erhält der &lt;li&gt; eine gelbe Schriftfarbe. </p>
+
+<ul>
+	<li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt
+    	<ul>
+        	<li>Listenpunkt</li>
+            <li>Listenpunkt
+            	<ul>
+                	<li>Listenpunkt</li>
+            		<li>Listenpunkt
+                    	<ul>
+                        	<li>Listenpunkt</li>
+                            <li>Listenpunkt
+                            	<ul>
+                                	<li>Listenpunkt</li>
+                                </ul>
+                            </li>
+          			    </ul>
+                     </li>
+                    <li>Listenpunkt</li>
+            		<li>Listenpunkt</li>
+                </ul>
+            </li>
+            <li>Listenpunkt</li>
+            <li>Listenpunkt</li>
+        </ul>
+    </li>
+    <li>Listenpunkt</li>
+    <li>Listenpunkt</li>
+</ul>
+
+</body>
+</html>

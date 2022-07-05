@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pixel</title>
+<link href="../mein_style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<h1>Pixel</h1>
+
+<ul class="zentriert">
+	<li><a href="#erste">Pixel der Rastergrafik</a>
+    	<ol class="kursiv">
+        	<li>Pixel als diskrete Abtastwerte</li>
+            <li>Pixelwerte</li>
+            <li>Probleme</li>
+        </ol>
+    </li>
+    <li><a href="#zweite">Pixel in Bildsensoren und Bildschirmen</a></li>
+    <li><a href="#dritte">Begriffsgeschichte und verwandte Begriffe</a></li>
+</ul>
+
+<hr>
+
+<h2 id="erste" style="letter-spacing:1em">Pixel der Rastergrafik</h2>
+
+<p class="zentriert"><img src="../bilder/reconstructionsFromPixels.png" alt="pixel"></p>
+
+<p class="big">Oft werden Pixel als rechteckig oder quadratisch betrachtet. Dies ist jedoch eine nicht allgemeingültige Modellvorstellung. Im Sinne der digitalen Signalverarbeitung ist ein Pixel ein diskreter Abtastwert; über andere Punkte als die Pixel lassen sich keine Aussagen treffen. <strong style="color:#2B0BF8; background-color:#D1E8FB;">Deutlich wird dies bei der Vergrößerung von Rastergrafiken: </strong>Das Erscheinungsbild variiert je nach gewählter Skalierungsmethode, und die Pixel des Ausgangsbildes erscheinen in der Vergrößerung nicht zwangsläufig als Quadrate <em >(siehe Bild rechts).</em> Ein vergleichbarer Fehler wäre es, die Abtastwerte eines digitalen Audiosignals als über ein bestimmtes Zeitintervall gleichbleibende Werte zu interpretieren, weil das Signal vom Audioeditor in der Vergrößerung treppenartig dargestellt wird.</p>
+
+<p style="font-weight:bold;" class="block">Die Modellvorstellung eines quadratischen Pixels ist unangemessen, weil sie die unterschiedlichen Möglichkeiten bei der Umwandlung von Bildinhalten zu Rastergrafiken vernachlässigt. In der Computergrafik, bei der künstliche Bilder erzeugt werden, können die gewünschten Bildinhalte als Vektorgrafik, 3D-Szenenbeschreibung oder eine andere Art der Bildbeschreibung vorliegen. Diese Bildbeschreibung definiert ein kontinuierliches Signal, das <span style="font-size:5em">in eine Rastergrafik</span> umgewandelt (gerastert oder gerendert) werden muss, indem die Bildinhalte abgetastet werden. Der verwendete Rekonstruktionsfilter bestimmt, wie die Farben der ursprünglichen Bildbeschreibung in der Nähe eines Pixels gewichtet werden und in die Pixelfarbe einfließen. Bei einem bilderfassenden System, das ein natürliches Bildsignal auf einer optischen Bildebene oder -zeile digitalisiert, bestimmt sich der entsprechende theoretische „Rekonstruktionsfilter“ (die Punktspreizfunktion) durch die optischen und elektronischen Elemente des Systems.</p>
+
+<p class="indent100px"><span>Es</span> ist zwar möglich, Pixel als Quadrate zu betrachten, dies ist jedoch allenfalls dann sinnvoll, wenn als Rekonstruktionsfilter ein Box-Filter gewählt wurde, denn hier würde der Farbwert eines Pixels dem Mittelwert aller <span class="gross">Farbbeiträge innerhalb des Quadrates entsprechen. Für die nachfolgende Bildbearbeitung muss jedoch das </span>resultierende Pixel allgemein als diskreter Abtastwert betrachtet werden. Wenn von „einem Pixel Breite“ die Rede ist, dann ist damit tatsächlich der Abstand zwischen zwei benachbarten Pixeln gemeint; der „Mittelpunkt“ eines Pixels bezeichnet in Wirklichkeit das Pixel selbst. Mit Formulierungen wie „Überdeckung eines halben Pixels“ ist die Überdeckung der Bildinhalte durch den verwendeten Rekonstruktionsfilter gemeint.</p>
+
+<hr>
+
+<h2 id="zweite" class="zentriert">Pixel in Bildsensoren und <span style="font-size:100px">Bildschirmen</span></h2>
+
+<p style="letter-spacing:0.1em;" class="block2">Die Pixel eines Bildsensors oder Bildschirms bestehen üblicherweise aus Flächen jeweils einer Grundfarbe (Rot, Grün und Blau). Bei Flüssigkristall-Bildschirmen (LCD) wird jedes sichtbare Bildelement mit einem Farbwert angesteuert. Die für die Grundfarben des Pixels zuständigen Flächen, Subpixel genannt, sind oftmals aneinander anliegend angeordnet. <strong> Die im Vergleich zum Pixel feinere Subpixelstruktur kann dazu genutzt werden, um die horizontale Auflösung bei der Rasterung zu erhöhen (Subpixel-Rendering). </strong>Ferner sind auch dreieckige, unregelmäßig große, alternierend angeordnete oder zusätzliche weiße Subpixel möglich, zum Beispiel bei den PenTile-Pixelgeometrien von Samsung. Bei manchen, besonders älteren, Flachbildschirmen können herstellungsbedingt sogenannte Pixelfehler auftreten.</p>
+
+<p style="word-spacing:100px; text-align:right">Röhrenbildschirme projizieren das Bildsignal mittels Elektronenstrahlen auf eine Leuchtstoffmatrix mit festgelegter Auflösung. Die vor der Leuchtstoffschicht montierte Schlitz-, Streifen- oder Lochmaske garantiert zwar, dass nur die zu den jeweiligen Elektronenstrahlen gehörenden Grundfarben angeregt werden. Wegen des relativ breiten und angenähert normalverteilten Intensitätsprofils der Elektronenstrahlen sowie Verzeichnung und Streulicht stimmen die Bildpunkte der Leuchtstoffmatrix jedoch nicht genau mit den zu erwartenden Pixeln überein, selbst wenn die ausgegebene Auflösung der physischen Auflösung des Röhrenbildschirms entspricht.</p>
+
+<p class="lila">Die physische Größe eines Pixels hängt vom Gerät ab. Die Pixeldichte eines Bildschirms oder Scanners wird in pixel per inch (ppi) bzw. dots per inch (dpi) angegeben.<em> Handelsübliche Computerbildschirme erreichen eine Pixeldichte von ungefähr 100 ppi, entsprechend 0,3 Millimeter pro Pixel. Bei Fernsehern ist die Pixeldichte meist niedriger und bei neueren Smartphones um ein Vielfaches höher, während die Sensoren von Scanner und Digitalkameras mehrere Tausend ppi erreichen können.</em> Die Anzahl der in Bildsensoren maximal verwendbaren Pixel wird oft in Megapixeln angegeben, wobei aber meist nur die Farbpunkte eines Bayer-Sensors gemeint sind und nicht die Bildpunkte. Das Seitenverhältnis eines Pixels auf dem Bildschirm (englisch pixel aspect ratio) muss nicht zwingend 1:1 sein; die meisten SDTV-Videonormen schreiben unregelmäßige Pixel-Seitenverhältnisse vor. Die Pixelgröße sowie der Pixelabstand im Verhältnis zur Bildauflösung haben entscheidenden Einfluss auf die Lesbarkeit und Erkennbarkeit von Texten und Grafiken auf Computermonitoren und Fernsehern.</p>
+
+<hr>
+
+<h2 id="dritte" class="kursiv">Begriffsgeschichte und verwandte <span>Begriffe</span></h2>
+
+<p style="line-height:8px;">Die Bezeichnung „Bildpunkt“ im Sinne einer kleinen Anzeigeeinheit eines Gerätes wurde zuerst 1884 in Paul Nipkows Patentschrift für sein Elektrisches Teleskop verwendet, allerdings war der Begriff bereits vorher in der Optik üblich.</p>
+
+<p class="gross" >Die Bezeichnung „picture element“ wurde ab 1911[2] in diversen US-amerikanischen Patentschriften verwendet.<span style="word-spacing:-24px"> Als in den 1950er und 1960er</span> Jahren das Einscannen, die Bearbeitung und die Anzeige von Bildern mittels Computern möglich wurde, verwendete die Fachliteratur meist andere Begriffe wie<em> „resolution element“, „spot“, „sample“, „raster point“ oder „matrix element“.</em></p>
+
+<p>Die ältesten bekannten Dokumente, in denen der Begriff „Pixel“ vorkommt, sind Fred C. Billingsleys 1965 veröffentlichte Artikel Digital Video Processing at JPL und Processing Ranger and Mariner Photography in den Proceedings Vol. 0003 bzw. 0010 der SPIE. <strong>Die weniger gebräuchliche Bezeichnung Pel wurde von William F. Schreiber als Teil seines Artikels Picture Coding in den IEEE-Proceedings Vol. 55 im März 1967 veröffentlicht.</strong></p>
+
+<p style="color:#9A2CD9;">Der Begriff „Pixel“ wird auch in Bezeichnungen für bestimmte Anwendungen von Rastergrafiken verwendet, etwa Pixelfonts, Pixel-Art und Pixel-Banner. Von „Pixel“ abgeleitet ist der Begriff Voxel, der unter anderem das dreidimensionale Äquivalent eines Pixels bezeichnet, sowie der in der Bildsynthese verwendete Begriff Texel für Pixel einer Textur.</p>
+
+<hr>
+
+<p><a href="#">nach oben</a></p>
+
+</body>
+</html>

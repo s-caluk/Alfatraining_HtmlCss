@@ -1,0 +1,114 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:14px;
+	background-image:url(bilder/unterwater.jpg);
+	background-repeat:no-repeat;
+}
+
+h1 {
+	margin-bottom:30px;
+	color:#FFFFFF;
+}
+
+p {
+	color:#FFFFFF;
+}
+p.f1 {
+	position:absolute;
+	top:100px;
+	left:700px;
+	margin-bottom:30px;
+}
+
+p.f2 {
+	position:absolute;
+	top:50px;
+	left:-40px;
+}
+
+p.f3 {
+	position:absolute;
+	top:0px;
+	left:200px;
+}
+
+p.gruen {
+	position:absolute;
+	top:0px;
+	left:700px;
+}
+	
+
+div#conteiner {
+	position:relative;
+	width:600px;
+	margin:40px auto;
+/*	background-color:#979797;*/
+}
+
+div#content {
+	margin-bottom:20px;
+}
+
+/*====================================*/
+ul#navi {
+	list-style:none;
+}
+
+ul#navi li {
+	float:left;
+	margin-bottom:20px;
+	width:150px;
+	height:50px;
+	border-bottom:5px solid #FFFFFF;
+	background-color:#A4E6F7;
+}
+
+ul#navi li a {
+	position:relative;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	padding:15px;
+	font-size:20px;
+	color:#FFFFFF;
+}
+
+ul#navi li a:hover {
+	color:#A4E6F7;
+	background-color:#FFFFFF;
+	border-bottom:5px solid #A4E6F7;
+}
+/*====================================*/
+a.tool {
+	position:relative;	
+}
+
+a.tool span {
+	display:none;
+}
+
+a:hover.tool span {
+	display:block;
+	position:absolute;
+	top:60px;
+	left:0px;
+	width:150px;
+	height:auto;
+	z-index:1;
+	font-size:12px;
+	color:#6AC4FD;
+	background-color:#FFFFFF;
+}
+
+/*====================================*/	
+
+
+	

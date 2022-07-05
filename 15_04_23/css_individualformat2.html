@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS Individualformat2</title>
+<style type="text/css">
+
+body {
+	font-family:"Arial, Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#109C1C;
+}
+
+ul#navi {
+	width:150px;
+	background-color:#FCCCCD;
+}
+
+p#footer {
+	border:10px dotted #9914A6;
+	background-color:#EDD2F3;
+}
+
+p.merksatz {
+	font-family:"Courier New", Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco,  monospace;
+	font-size:20px;
+	color:#02732B;
+	background-color:#F5F4CF;
+}
+	
+</style>
+
+</head>
+<body>
+
+<h1>CSS Individualformat 2</h1>
+
+<h2>Invidualformat oder Klasse?</h2>
+
+<p class="merksatz"><strong>Empfehlung:</strong><br>
+Wenn die Formatvorgabe <em>mehrfach</em> in einem HTML-Dokument verwendet werden soll , Klassen benutzen ( Bespiel: Textauszeichungen).</p>
+
+<p class="merksatz">Wird die Formatvorgabe nurr <em>einmal</em> referenziert, Invidualformat verwenden ( Beispiel: Festgelegte Bereich , wie ul#navi, div#container, div#content, p#footer, etc.).</p>
+
+<hr>
+
+<ul id="navi">
+	<li><a href="#">Verweis 1</a></li>
+    <li><a href="#">Verweis 2</a></li>
+    <li><a href="#">Verweis 3</a></li>
+    <li><a href="#">Verweis 4</a></li>
+    <li><a href="#">Verweis 5</a></li>
+    <li><a href="#">Verweis 6</a></li>
+
+</ul>
+
+<p id="footer">Dies ist mein Fussbereich, ausgezeichnet mit dem Invidualformat p#footer</p>
+
+</body>
+</html>

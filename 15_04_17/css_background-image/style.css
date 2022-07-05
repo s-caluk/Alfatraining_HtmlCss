@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#5D078F;
+}
+
+p {
+	width:500px;
+	height:400px;
+	color:#FFFFFF;  /*weiss*/
+	background-color:#350797;
+}
+
+.blumeklein {
+	background-image:url(bilder/10pic.jpg);
+}
+
+.blumegross {
+	background-image:url(bilder/10.jpg);
+}
+
+.blumeeinzeln {
+	background-image:url(bilder/10pic.jpg);
+	background-repeat:no-repeat;
+}
+
+.blumeposition1 {
+	background-image:url(bilder/10pic.jpg);
+	background-repeat:no-repeat;
+	background-position:right bottom;
+}
+
+.blumeposition2 {
+	background-image:url(bilder/10pic.jpg);
+	background-repeat:no-repeat;
+	background-position:20px 200px;
+}
+
+.blumeposition3 {
+	background-image:url(bilder/10pic.jpg);
+	background-repeat:no-repeat;
+	background-position:-40px 200px;
+}
+
+.blumenreihe {
+	background-image:url(bilder/10pic.jpg);
+	background-repeat:repeat-x;
+}
+
+.blumenspalte {
+	background-image:url(bilder/10pic.jpg);
+	background-repeat:repeat-y;
+}

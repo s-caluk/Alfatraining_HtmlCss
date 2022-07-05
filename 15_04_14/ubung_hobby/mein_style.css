@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	background-color:#FCEAFA;
+}
+
+h1 {
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color:#2A12FB;
+}
+
+h2 {
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color: #05C76A;	
+}
+
+p {
+	background-color:#F2F8BB; /*gelb*/
+}
+
+span {
+	color:#D9032B; /*rot*/
+}
+
+p span {
+	background-color:#F38920; /*orange*/
+}
+
+p.merksatz {
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	color:#07BBBD;/*turkis*/
+}
+
+.gruen {
+	background-color:#29B706;
+}
+
+/*Formatierung fuer Liste*/
+li {
+	color:#1404A0; 
+}
+
+ul li {
+	color:#D71619; 
+	background-color:#14F0EC;
+} 
+
+ul li ul li {
+	background-color:#F7F4BA;
+}
+
+ul li ul li ol li {
+	background-color:#F58E90;
+}
+
+

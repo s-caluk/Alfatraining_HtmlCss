@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS position &ndash; z-index</title>
+<style type="text/css">
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h2 {
+	margin-bottom:30px;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+div {
+	width:180px;
+	height:180px;
+	border:1px solid #000000;
+}
+
+div#rot {
+	position:absolute;
+	top:100px;
+	left:50px;
+/*	z-index:5;*/
+	background-color:#FD0307;
+}
+div#blau {
+	position:absolute;
+	top:150px;
+	left:100px;
+	z-index:6;
+	background-color:#071AF4;
+}
+div#gruen {
+	position:absolute;
+	top:200px;
+	left:150px;
+	z-index:1;
+	background-color:#11BB54;
+}
+div#gelb {
+	position:absolute;
+	top:250px;
+	left:200px;
+	background-color:#F3F904;
+}
+
+div#merkbox {
+	width:300px;
+	height:auto; /*hoehe wieder auf ihren Ursprungszustand (=flexibel) zurueck setzen, d.h. NICHT die 180px vom Element div erben*/
+	padding:20px;
+	border:3px dotted #B500C0;
+	margin-left:450px;
+	background-color:#F5D8F1;
+		
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>CSS position &ndash; z-index</h1>
+
+<h2>Schichtposition bei Überlappung auf der Ebene <em>position:absolute;</em></h2>
+
+<div id="rot"></div>
+<div id="blau"></div>
+<div id="gruen"></div>
+<div id="gelb"></div>
+
+<div id="merkbox">
+
+<p>Absolute posinierte Elemente werden normalerweise in der Reichenfolge angezeigt, in der sie im HTML-Quelltext notirt wurden: Später notierte Elemente überdecken vorhergehende.</p>
+
+<p>Über z-index lässt sich diese Reichenfolge ändern. Erlaubt ist die Angabe </p>
+
+<p>Elemente mit höherem Wert überdecken Elemente mit niedrigerem , oder gar keinem Wert.</p>
+
+</div>
+
+</body>
+</html>

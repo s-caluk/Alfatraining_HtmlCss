@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML Tabellen 3</title>
+</head>
+
+<body>
+
+<h1>HTML Tabellen 3</h1>
+
+<h2>Kopf- Körper- und Fußbereich einer Tabelle</h2>
+
+<table border="1">
+
+	<caption>Ihre Reiseroute</caption>
+    <!--Kopfbereich der Tabelle-->
+    <thead>
+    	<tr>
+        	<th>Nord</th>
+            <th>Ost</th>
+            <th>Süd</th>
+            <th>West</th>
+        </tr>
+    </thead>
+    
+    <!--Koerperbereich der Tabelle-->
+    <tbody>
+    	<tr>
+        	<td>Hamburg</td>
+            <td>Leipzig</td>
+            <td>München</td>
+            <td>Dortmund</td>
+        </tr>
+        
+            <tr>
+        	<td>Bremen</td>
+            <td>Berlin</td>
+            <td><img src="google.jpg" alt="Bild von Google"></td>
+            <td>Köln</td>
+        </tr>
+              
+    </tbody>
+    
+    <!--Fussbereich der Tabelle-->
+    <tfoot>
+    	<tr>
+        	<td><a href="#">Preisliste für Reisen in den Norden</a></td>
+            <td><a href="#">Preisliste für Reisen in den Osten</a></td>
+            <td><a href="#">Preisliste für Reisen in den Süden</a></td>
+            <td><a href="#">Preisliste für Reisen in den Westen</a></td>
+        </tr>
+    
+    </tfoot>
+
+</table>
+
+<p>Eine Tabelle kann in logische Bereiche aufgeteilt werden. In einen Kopfbereich, einen oder mehrere Datenbereiche und einen Fußbereich. Diese Aufteilung ist optional (und nicht im Browser sichtbar) <br>
+<strong>Vorteil:</strong> Die Tabelle wird für Suchmaschinen semantisch besser erfassbar, außerdem sollte ein Drucker beim Ausdruck einer langen Tabelle den Tabellenkopf und Tabellenfuß auf jeder Seite wiederholen.</p>
+
+<h3>Erläuterung:</h3>
+
+<dl>
+	<dt>thead:</dt>
+    <dd>Tabellenkopf (thead= table head)</dd>
+    
+    <dt>tbody:</dt>
+    <dd>Tabellenkörper (tbody= table body)</dd>
+    
+    <dt>tfoot:</dt>
+    <dd>Tabellenfuß (tfoot= table foot)</dd>
+</dl>
+
+<p><strong>Wichtig:</strong> Die Reihenfolge thead -tbody -tfoot kann erst ab HTML 5 ganauso aufgeführt werden. In älteren HTML Versionen war es notwendig, zuerst Kopf, danach Fuß und erst am Schluß den body-bereich zu notieren. Der Browser stellte und stellt auch heute noch die Reihenfolge optisch richtig herum dar. Der Grund für das vertauschen war das bessere Einlesen der Tabelle.</p>
+
+</body>
+</html>

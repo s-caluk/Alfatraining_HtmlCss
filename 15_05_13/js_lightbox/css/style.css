@@ -1,0 +1,149 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	margin-bottom:20px;
+}
+
+h2 {
+	font-family:"Courier New", Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, monospace;
+	margin-bottom:20px;
+	color:#6A6A6A;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+ul {
+	list-style:none;
+}
+
+div#container {
+	margin:20px auto;
+	width:650px;
+	padding:20px;
+	border:1px solid #000000;
+}
+
+div#content {
+	padding:10px;
+	margin-left:220px;
+	background-color:#A4E1FF;
+}
+
+ul#navi {
+	float:left;
+	width:200px;
+	/*background-color:#F82D73;*/
+}
+
+ul#navi li {
+	margin-bottom:5px;
+	background-color:#6FFCB3;
+}
+
+ul#navi li a {
+	display:block;
+	padding:5px;
+	text-decoration:none;
+	color:#000000;
+	background-color:#E29AF9;
+}
+
+ul#navi li a:hover {
+	background-color:#9D69FC;
+}
+
+/*---------------------------------------
+--------------- Galerie -----------------
+---------------------------------------*/
+ul.galerie {
+	margin-bottom:30px;
+	overflow:auto;      /*overflow yada heihgt vermessen li ler asagi kayiyor.tercih et!*/
+	/*height:60px;*/
+	background-color:#FF0004;
+}
+
+ul.galerie li {
+	float:left;
+	width:60px;
+	/*height:48px;*/
+	margin:5px;
+	background-color:#61FB69;
+}
+
+ul.galerie li a {
+	display:block;
+	height:48px;
+	text-decoration:none;
+	color:#000000;
+	background-color:#FFF500;
+}
+
+ul.galerie li a:hover {
+	background-color:#FFE8A8;
+}
+
+/*------ Bei Galerie 2 soll der Text im Element ausgeblendet werden.  --------*/
+
+ul.galerie li a span {
+	/*display:none;*/     /* nicht ganz optimal bei Screenreadern, weil manche den text lesen, manche nicht*/
+	display:block;
+	height:0px;
+	text-indent:-9999px;
+}
+
+/*--------------------  Galerie 3 mit eigenen Klassen für die Vorschaubilder  -----------*/
+
+ul.galerie li a.bild1 {
+	background-image:url(../blumenbilder/01picx.jpg);
+}
+
+ul.galerie li a:hover.bild1 {
+	background-image:url(../blumenbilder/01pic.jpg);
+}
+
+ul.galerie li a.bild2 {
+	background-image:url(../blumenbilder/02picx.jpg);
+}
+
+ul.galerie li a:hover.bild2 {
+	background-image:url(../blumenbilder/02pic.jpg);
+}
+
+ul.galerie li a.bild3 {
+	background-image:url(../blumenbilder/03picx.jpg);
+}
+
+ul.galerie li a:hover.bild3 {
+	background-image:url(../blumenbilder/03pic.jpg);
+}
+
+ul.galerie li a.bild4 {
+	background-image:url(../blumenbilder/04picx.jpg);
+}
+
+ul.galerie li a:hover.bild4 {
+	background-image:url(../blumenbilder/04pic.jpg);
+}
+
+ul.galerie li a.bild5 {
+	background-image:url(../blumenbilder/05picx.jpg);
+}
+
+ul.galerie li a:hover.bild5 {
+	background-image:url(../blumenbilder/05pic.jpg);
+}
+
+/*bei Galerie 3 soll der text im Element mit text-imdent ausgeblendet werden.*/

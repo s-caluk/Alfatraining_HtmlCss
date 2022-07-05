@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*alle automatischen Abstande des Browsers auf NULL setzen:*/
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	margin-bottom:30px;
+}
+
+h2 {
+	margin-bottom:20px;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+ul {
+	margin-left:40px;
+	margin-bottom:60px;
+}
+
+/*-----------------------------
+------- vertikale Liste -------
+-----------------------------*/
+ul#navi1 {
+	width:180px;
+	list-style:none;
+	/*background-color:#C36CF0;*/
+}
+
+ul#navi1 li {
+	margin-bottom:5px;
+	background-color:#52F1BD;
+}
+
+ul#navi1 li a {
+	display:block;  /*Verweis ueber seine gesamte Breite erstrecken*/
+	padding:5px;
+	text-decoration:none;
+	color:#000000;
+	background-color:#87B5FB;
+}
+
+ul#navi1 li a:hover {
+	color:#FFFFFF;
+	background-color:#0A107A;
+}
+
+/*Aktivlink*/
+ul#navi1 li a.aktivlink {
+	cursor:default;   /*Mauszeiger als Pfeil*/
+	color:#FFFFFF;
+	background-color:#0A107A;
+}
+	
+	
+/*-----------------------------
+----- horizontale Liste -------
+-----------------------------*/
+ul.navi2 {
+	/*width:180px;*/   /*muss weg*/
+	list-style:none;
+	/*background-color:#C36CF0;*/
+}
+
+ul.navi2 li {
+	display:inline;
+	/*margin-bottom:5px;*/   /*nicht mehr notwendig*/
+	background-color:#52F1BD;
+}
+
+ul.navi2 li a {
+	/*display:block;*/  /*muss raus, damit a-tag keinen Umbruch erzeugt*/
+	padding:15px 25px 15px 25px;
+	text-decoration:none;
+	color:#000000;
+	background-color:#87B5FB;
+}
+
+ul.navi2 li a:hover {
+	color:#FFFFFF;
+	background-color:#0A107A;
+}
+
+/*Aktivlink*/
+ul.navi2 li a.aktiv2 {
+	cursor:default;   /*Mauszeiger als Pfeil*/
+	color:#FFFFFF;
+	background-color:#0A107A;
+}
+	

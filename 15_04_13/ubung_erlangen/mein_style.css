@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+/*Dies ist ein CSS-Kommentar*/
+
+body {
+	font-family:Arial, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-color:#E2F5FB;
+}
+
+h1 {
+	font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color:#2A12FB;
+}
+
+h2 {
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color: #05C76A;	
+}
+
+li {
+	color:#1404A0; 
+}
+
+ol li {
+	color:#D71619; 
+	background-color:#14F0EC;
+} 
+
+ol li ul li {
+	background-color:#F7F4BA;
+}
+
+ol li ul li ol {
+	background-color:#95FF8D;
+}
+
+ol li ul li ol li {
+	color:#880EBD; 
+	background-color:#E0C7F8; 
+}
+
+ol li ul li ol li ul li ul li {
+	color:#EF9B13;
+}
+
+ol li ul li ol li ul li ul li ol {
+	background-color:#FDE92E;
+}
+
+ol li ul li ol li ul li ul li ol li {
+	color:#1C03F4;
+	background-color:#F7C1C2;
+}
+

@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+div.spalten {
+	background-color:#FF9A1A;
+}
+
+div.links {
+	float:left;
+	width:45%;
+	background-color:#5DF991;
+}
+
+div.rechts {
+	margin-left:50%;
+	background-color:#AA6CF8;
+}

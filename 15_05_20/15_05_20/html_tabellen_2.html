@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML Tabellen 2</title>
+</head>
+
+<body>
+
+<h1>HTML Tabellen 2</h1>
+
+<h2>Zellen verbinden</h2>
+
+<h3>Zellen in einer Reihe spaltenweise verbinden: colspan</h3>
+
+<table border="1">
+	
+    <!--Reihe 1-->
+    <tr>
+    	<td>Spalte 1</td>
+        <td>Spalte 2</td>
+        <td>Spalte 3</td>
+        <td>Spalte 4</td>
+        <td>Spalte 5</td>
+        <td>Spalte 6</td>
+    </tr>
+    
+    <!--Reihe 2-->
+        <tr>
+    	<td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+    </tr>
+    
+        <!--Reihe 3-->
+        <tr>
+        <td colspan="4">colspan über 4 Spalten</td>
+    	<!--<td>Maria</td>-->
+        <!--<td>Michael</td>-->
+        <!--<td>Marta</td>-->
+        <!--<td>Otto</td>-->
+        <td>Zelle</td>
+        <td>Zelle</td>
+    </tr>
+    
+        <!--Reihe 4-->
+        <tr>
+    	<td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+    </tr>
+    
+        <!--Reihe 5-->
+        <tr>
+    	<td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+    </tr>
+    	
+</table>
+
+<p>colspan über 4 Spalten:<br>
+Die erste Zelle die betroffen ist (Reihe 3 - erste td) wird nun über die Breite von 4 Spalten erstreckt. Dazu müssendie überflüssigen Zellen entfernt werden, am besten durch auskommentieren per Kommentar.</p>
+
+<h3>Zellen in einer Spalte reihenweise verbinden: rowspan</h3>
+
+<table border="1">
+	
+    <!--Reihe 1-->
+    <tr>
+    	<td>Spalte 1</td>
+        <td>Spalte 2</td>
+        <td>Spalte 3</td>
+        <td>Spalte 4</td>
+        <td>Spalte 5</td>
+        <td>Spalte 6</td>
+    </tr>
+    
+    <!--Reihe 2-->
+        <tr>
+    	<td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+    </tr>
+    
+        <!--Reihe 3-->
+        <tr>
+    	<td>Maria</td>
+        <td>Michael</td>
+        <td>Marta</td>
+        <td>Otto</td>
+        <td rowspan="3">rowspan über 3 Zeilen</td>
+        <td>Anna</td>
+	<!--<td>Berta</td>-->
+    </tr>
+    
+        <!--Reihe 4-->
+        <tr>
+    	<td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <!--<td>Zelle</td>-->
+        <td>Zelle</td>
+    </tr>
+    
+        <!--Reihe 5-->
+        <tr>
+    	<td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <!--<td>Zelle</td>-->
+        <td>Zelle</td>
+    </tr>
+    	
+</table>
+
+<h3>Kombination aus colspan und rowspan</h3>
+
+<table border="1">
+	
+    <!--Reihe 1-->
+    <tr>
+    	<td>Spalte 1</td>
+        <td>Spalte 2</td>
+        <td>Spalte 3</td>
+        <td>Spalte 4</td>
+        <td>Spalte 5</td>
+        <td>Spalte 6</td>
+    </tr>
+    
+    <!--Reihe 2-->
+        <tr>
+    	<td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+    </tr>
+    
+        <!--Reihe 3-->
+        <tr>
+    	<td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td rowspan="3" colspan="2">rowspan über 3 Zeilen<br>
+        und colspan über 2 Spalten</td>
+        <!--<td>A</td>-->
+        <!--<td>B</td>-->
+    </tr>
+    
+        <!--Reihe 4-->
+        <tr>
+    	<td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <!--<td>C</td>-->
+        <!--<td>D</td>-->
+    </tr>
+    
+        <!--Reihe 5-->
+        <tr>
+    	<td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <!--<td>E</td>-->
+        <!--<td>F</td>-->
+    </tr>
+    	
+</table>
+
+
+
+</body>
+</html>

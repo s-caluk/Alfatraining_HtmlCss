@@ -1,0 +1,171 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kontakt Formulare</title>
+
+<script type="text/javascript" src="js/jquery_1-9-1.js"></script> 
+<script type="text/javascript" src="js/slimbox2.js"></script>
+
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="conteiner">
+
+    <div id="head">
+    
+        <h1>Blumen Galerie</h1>
+    
+    </div>
+    
+    <ul id="navi">
+        <li><a href="#">Kontakt Formular 1</a></li>
+        <li><a href="#">Kontakt Formular 2</a></li>
+        <li><a href="#">Kontakt Formular 3</a></li>
+        <li><a href="#">Kontakt Formular 4</a></li>
+        <li><a href="#">Kontakt Formular 5</a></li>
+        <li><a href="#">Kontakt Formular 6</a></li>
+        <li><a href="#">Kontakt Formular 7</a></li>
+        <li><a href="#">Kontakt Formular 8</a></li>
+        <li><a href="#">Kontakt Formular 9</a></li>
+        <li><a href="#">Kontakt Formular 10</a></li>
+    </ul>
+    
+    <div id="rechts">
+    
+    	<p><em>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</em>, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam agna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. <strong>Stet clitakasd guber gren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</strong></p>
+        
+<!--        <p><img src="bild/graffiti.jpg" alt="tam"</p>-->
+    </div>
+    
+    <div id="bildbox">
+    
+    	<h2>Blumen Galeri</h2>
+        
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. ,</p>
+        
+        <ul class="galerie">  <!--hepsi ayni dosyada olmak zorunda aman dikkat-->
+        
+            <li><a href="bild/01.jpg" data-rel="lightbox[blumen]" title="Blume 1" class="bild1">Bild 1</a></li>
+            <li><a href="bild/02.jpg" data-rel="lightbox[blumen]" title="Blume 2" class="bild2">Bild 2</a></li>
+            <li><a href="bild/03.jpg" data-rel="lightbox[blumen]" title="Blume 3" class="bild3">Bild 3</a></li>
+            <li><a href="bild/04.jpg" data-rel="lightbox[blumen]" title="Blume 4" class="bild4">Bild 4</a></li>
+            <li><a href="bild/05.jpg" data-rel="lightbox[blumen]" title="Blume 5" class="bild5">Bild 5</a></li>
+        	<li><a href="bild/06.jpg" data-rel="lightbox[blumen]" title="Blume 6" class="bild6">Bild 6</a></li>
+            <li><a href="bild/07.jpg" data-rel="lightbox[blumen]" title="Blume 7" class="bild7">Bild 7</a></li>
+            <li><a href="bild/08.jpg" data-rel="lightbox[blumen]" title="Blume 8" class="bild8">Bild 8</a></li>
+            <li><a href="bild/09.jpg" data-rel="lightbox[blumen]" title="Blume 9" class="bild9">Bild 9</a></li>
+            <li><a href="bild/10.jpg" data-rel="lightbox[blumen]" title="Blume 10" class="bild10">Bild 10</a></li>
+             <li><a href="bild/01.jpg" data-rel="lightbox[blumen]" title="Blume 1" class="bild1">Bild 1</a></li>
+            <li><a href="bild/02.jpg" data-rel="lightbox[blumen]" title="Blume 2" class="bild2">Bild 2</a></li>
+            <li><a href="bild/03.jpg" data-rel="lightbox[blumen]" title="Blume 3" class="bild3">Bild 3</a></li>
+            <li><a href="bild/04.jpg" data-rel="lightbox[blumen]" title="Blume 4" class="bild4">Bild 4</a></li>
+             <li><a href="bild/05.jpg" data-rel="lightbox[blumen]" title="Blume 5" class="bild5">Bild 5</a></li>
+        	<li><a href="bild/06.jpg" data-rel="lightbox[blumen]" title="Blume 6" class="bild6">Bild 6</a></li>
+            <li><a href="bild/07.jpg" data-rel="lightbox[blumen]" title="Blume 7" class="bild7">Bild 7</a></li>
+        </ul>       
+    
+    </div>
+    
+    <form action="meinscript.php" method="post" name="kontaktformular">
+		  <fieldset>
+          	<legend>Ihre Adressendaten:</legend>        
+                
+            <p>
+            
+                <label for="anrede">Bitte Anrede auswählen:</label>
+                
+                <!--auswahlliste-->
+                <select name="anrede" id="anrede">
+                    <option>Herr</option>
+                    <option>Frau</option>
+                </select>
+            </p>
+            
+            <p>
+                <label for="vorname">Vorname: </label>
+                <!--Einzeiliger Eingabebereich-->
+                <input type="text" name="vorname" id="vorname">    
+            </p>
+            
+            <p>
+                <label for="nachname">Nachname:</label>
+                <input type="text" name="nachname" id="nachname">    
+            </p>
+            <p>
+                <label for="strasse">Strasse und Hausnummer:</label>
+                <input type="text" name="strasse" id="strasse">    
+            </p>
+            
+            <p>
+                <label for="plz">Postleitzahl:</label>
+                <input type="text" name="plz" id="plz">    
+            </p>
+            
+            <p>
+                <label for="ort">Ort:</label>
+                <input type="text" name="ort" id="ort">    
+            </p>
+            
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">    
+            </p>
+            
+             <p>
+             
+        	<label for="nachricht">Platz für ihre Nachricht: </label>
+            
+            <textarea name="nachricht" id="nachricht">*</textarea>
+        
+       		 </p>   
+             
+            <p class="clr"><input type="submit" value="Senden" name="absenden" class="cur"></p>   
+            <p class="clr"><input type="reset" value="Löschen" name="loeschen" class=""></p>            
+                
+    	</fieldset>    
+        
+       <!-- <fieldset class="clr">
+    		<legend>Bitte wählen Sie hier Ihre Hobby aus:</legend>   
+            
+            <p>
+            <label for="malen">Malen:</label>
+            <input type="checkbox" id="malen" name="interessen">
+            </p>
+            
+            <p>
+            <label for="kochen">Kochen:</label>
+            <input type="checkbox" id="kochen" name="interessen">
+            </p>
+            
+             <p>
+             <label for="urlaub">Urlaub:</label>
+            <input type="checkbox" id="urlaub" name="interessen">
+            </p>
+            
+            <p>
+            <label for="schwimmen">Schwimmen:</label>
+            <input type="checkbox" id="schwimmen" name="interessen">
+            </p>
+        
+        </fieldset>       -->
+
+    </form>
+    
+    <div id="end" class="clr">
+    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>  
+    </div>
+
+    
+    <div id="footer" class="clr">
+    <p>footer</p>    
+    </div>
+
+</div>
+
+
+</body>
+</html>

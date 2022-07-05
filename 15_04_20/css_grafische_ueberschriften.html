@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS grafische Überschriften</title>
+
+<link href="css_grafische_ueberschriften.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<h1>CSS grafische Überschriften</h1>
+
+<p>So sollte man bild-Überschriften <strong>NICHT</strong> einbinden:</p>
+
+<h2><img src="bilder/headline.gif" alt:"Meine wichtige h2-Überschriften"></h2>
+
+<p>Dies ist nicht nur für Textbrowser katastrophal, auch Suchmaschienen werden des alt-Attribut sicher nicht so bewerten , wie den Text einer Überschriften.</p>
+
+<hr>
+
+<p>Schon besser wäre dieses:</p>
+
+<h2 class="besser">Meine wichtige h2-Überschriften</h2>
+
+<p>Für Textbrowser und Suchmaschinen prima, jedoch für den sehenden Betrachter wenig befriedigend, auch ein eigenes Logo kann so nicht verwendet werden.</p>
+
+<hr>
+<p>Lösung:</p>
+
+<h2 class="optimal">Meine wichtige h2-Überschriften</h2>
+
+<p>Der Trick ist, ist Hintergrundbild mit der gewünschten Grafik einzubinden und dass den Text mit der CSS-Eigenschaften <strong>text-indent</strong> (Einzug der Ersten Textzeile) mit einem hohen negativen Wert auszublenden.</p>
+
+</body>
+</html>

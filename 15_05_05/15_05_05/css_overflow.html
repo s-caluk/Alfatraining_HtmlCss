@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS overflow</title>
+<style type="text/css">
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h2 {
+	margin-bottom:20px;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+div {
+	width:300px;
+	height:300px;
+	padding:15px;
+	border:1px solid #000000;
+	margin-bottom:120px;
+	background-color:#6CF9A8;
+}
+
+.hidden {
+	overflow:hidden;
+}
+
+.scroll {
+	overflow:scroll;
+}
+
+.auto {
+	overflow:auto;
+}
+
+.keinumbruch {
+	white-space:nowrap;
+	font-weight:bold;
+	color:#FF0004;
+}
+
+</style>
+</head>
+<body>
+
+<h1>CSS overflow</h1>
+
+<h2>Textüberlauf regeln</h2>
+
+<p>Wird einem Element eine feste Höhe zugewiesen, wie hier im Beispiel dem &lt;div&gt;, so läuft der Text über das Element hinaus, wenn er zu lang ist und keine Formatierung für den Textüberlauf festgelegt wurde:</p>
+
+<div>
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusatakimatam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetu justo duo dotakimatalores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum imata sanctus est Lorem ipsum dol dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliqu erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+</div>
+
+<p>Voraussetzung für den Einsatz der Eigenschaft <strong>overflow</strong> ist die gleichzeitige Vergabe einer festen Höhe.</p>
+
+<p>Hier wurde der Textüberlauf festgelegt mit <strong>overflow:hidden;</strong><br>
+dies bedeutet, dass der Text nach Erreichen der festgelegten Höhe einfach abgeschnitten wird und nicht mehr sichtbar ist:</p>
+
+<div class="hidden">
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusatakimatam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetu justo duo dotakimatalores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum imata sanctus est Lorem ipsum dol dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliqu erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+</div>
+
+<p>Hier wurde der Textüberlauf festgelegt mit <strong>overflow:scroll;</strong><br>
+dies bedeutet, dass Scrollbalken automatisch angelegt werden, egal, in welche Richtung wirklich ein Scrollen erforderlich ist:</p>
+
+<div class="scroll">
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusatakimatam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetu justo duo dotakimatalores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum imata sanctus est Lorem ipsum dol dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliqu erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+</div>
+
+<p>Hier wurde der Textüberlauf festgelegt mit <strong>overflow:auto;</strong><br>
+dies bedeutet, dass Scrollbalken automatisch erscheinen, und zwar nur für die Richtung, für die sie benötigt werden:</p>
+
+<div class="auto">
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusatakimatam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetu justo duo dotakimatalores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum imata sanctus est Lorem ipsum dol dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliqu erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+</div>
+
+<p>Hier wurde der Textüberlauf festgelegt mit <strong>overflow:auto;</strong><br>
+zusätzlich wurde dem 2. Textabsatz die Eigenschaft <strong>white-space:nowrap;</strong> zugewiesen, damit dieser nicht umbricht. Als Folge zeigt der Browser nun auh den horizontalen Scrollbalken im &lt;div&gt; an:</p>
+
+<div class="auto">
+	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusatakimatam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetu justo duo dotakimatalores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum imata sanctus est Lorem ipsum dol dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliqu erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    
+    <p class="keinumbruch">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusatakimatam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetu justo duo dotakimatalores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum imata sanctus est Lorem ipsum dol dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliqu erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+</div>
+
+</body>
+</html>

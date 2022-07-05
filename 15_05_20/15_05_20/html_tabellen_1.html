@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML Tabellen 1</title>
+</head>
+
+<body>
+
+<h1>HTML Tabellen 1</h1>
+
+<h2>1.) Einfache Tabelle mit Gitternetzlinien</h2>
+
+<h3>Kleinst mögliche Tabelle:</h3>
+
+<table border="1">
+	<tr>
+    	<td>Inhalt der Tabellenzelle</td>
+    </tr>
+</table>
+
+<h4>Erläuterung:</h4>
+
+<dl>
+	<dt>table:</dt>
+    <dd>Leitet eine Tabelle ein</dd>
+    
+    <dt>tr:</dt>
+    <dd>Leitet eine Tabellenzelle ein (tr = table row)</dd>
+    
+    <dt>td:</dt>
+    <dd>Leitet eine Datenzelle ein (td = table data)</dd>
+    
+</dl>
+
+<p>Das Attribut <strong>border="1"</strong> im einleitenden table-tag beszimmt, das eine Tabelle sichtbare Gitternetzlinien besitzt. Um eine Tabelle ohne Gitternetzlinien zu erstellen, wird das Attribut (ab HTML 5) komplett weg gelassen.</p>
+
+<p>Mit dem tag <strong>caption</strong> kann eine Tabellen-Überschrift (für die gesamte Tabelle) angegeben werden.</p>
+
+<h3>Tabelle mit 3 Spalten</h3>
+
+<table border="1">
+
+	<caption>Titel meiner Tabelle</caption>
+    
+    <tr>
+    	<th>Überschrift Spalte 1</th>
+        <th>Überschrift Spalte 2</th>
+        <th>Überschrift Spalte 3</th>
+    </tr>
+    
+    <tr>
+    		<td>Daten 1.1</td>
+            <td>Daten 2.1</td>
+            <td>Daten 3.1</td>
+    </tr>
+    
+        <tr>
+    		<td>Daten 1.2</td>
+            <td>Daten 2.2</td>
+            <td>Daten 3.2</td>
+    </tr>
+    
+        <tr>
+    		<td>Daten 1.3</td>
+            <td>Daten 2.3</td>
+            <td>Daten 3.3, ein sehr langer Inhalt</td>
+    </tr>
+
+</table>
+
+<h2>2. Blinde Tabelle (Tabelle ohne Gitternetzlinien)</h2>
+
+<table>
+	<caption>Tagesablauf bei alfatraining</caption>
+    
+    <tr>
+    	<th>Zeit</th>
+        <th>Programm</th>
+    </tr>
+    
+    <tr>
+    	<td>08:30-10:00 Uhr</td>
+        <td>Unterricht</td>
+    </tr>
+    
+    <tr>
+    	<td>10:00-10:15 Uhr</td>
+        <td>Frühstückspause</td>
+    </tr>
+    
+        <tr>
+    	<td>10:15-11:45 Uhr</td>
+        <td>Unterricht</td>
+    </tr>
+    
+        <tr>
+    	<td>11:45-11:50 Uhr</td>
+        <td>Kurze Pause</td>
+    </tr>
+    
+        <tr>
+    	<td>11:50-12:35 Uhr</td>
+        <td>Unterricht</td>
+    </tr>
+    
+    <tr>
+    	<td>Der weitere Tagesablauf<br>kann auf der Webseite von <br>alfatraining nachgelesen werden:<br>
+        <a href="http://www.alfatraining.de" target="_blank">alfatraining-Webseite</a></td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+
+<p>Tabellenzellen ohne Inhalt dürfen nicht einfach gelöscht werden, sondern müssen mit einem geschützten Leerzeichen versehen werden, damit sie valide bleiben.</p>
+
+</body>
+</html>

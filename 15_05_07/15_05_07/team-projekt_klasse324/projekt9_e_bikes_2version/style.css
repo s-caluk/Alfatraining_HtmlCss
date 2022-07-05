@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+
+/*-------BASICS-------*/
+
+
+body {
+	font-family:Arial, Gotham, "Helvetica Neue", Helvetica, sans-serif;
+	font-size:16px;
+	background-image:url(bilder/bg.jpg);
+}
+
+h1 {
+	text-align:center;
+	margin-bottom:20px;
+	font-size:4.5em;
+	padding:20px;
+	color:#FFFFFF;
+	background-color:#805DE4;
+}
+
+h2 {
+	margin-bottom:20px;
+	padding:10px;
+	text-align:center;
+	font-size:3em;
+	color:#FFFFFF;
+	background-color:#805DE4;
+}
+
+p {
+	padding:20px;
+	text-align:justify;
+	background-color:#FFFFFF;
+}
+
+ul#navi {
+	width:800px;
+	list-style:none;
+}
+
+ul#navi li {
+	float:left;
+	width:200px;
+	height:50px;
+	font-size:1.5em;
+	font-weight:bold;
+	text-align:center;
+	padding-top:20px;
+
+	background-color:#FFFFFF;
+}
+
+ul#navi li a {
+	display:inline;
+	padding:25px;
+	text-decoration:none;
+	color:#4E4E4E;
+}
+
+ul#navi li a:hover {
+	color:#F00C61;
+}
+
+ul#navi li a.activ {
+	color:#F00C61;
+}
+
+
+/*-------DIVS-------*/
+
+
+div#container {
+	margin:20px auto;
+	width:800px;
+	/*background-color:#1ABEE0;*/
+}
+
+div#content {
+	/*background-color:#DC3BC2;*/
+}
+
+p#footer {
+	clear:both;
+	text-indent:-9999px;
+	background-color:#7A5AA8;
+	background-image:url(bilder/index.png);
+}
+
+/*-------KLASSEN-------*/
+
+.rechts {
+	float:right;
+	margin-right:50px;
+}
+
+.links {
+	float:left;
+	margin-right:50px;
+}

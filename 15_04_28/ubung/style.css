@@ -1,0 +1,129 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+	background-image:url(bilder/verlauf_300y.jpg);
+	background-repeat:repeat-x;
+	background-attachment:fixed;
+	background-position:bottom;	
+}
+
+h1 {
+	padding:50px;
+	text-align:center;
+	color:#F8F8F8;
+	background-repeat:no-repeat;
+	background-image:url(bilder/imagesss.jpg);
+	/*background-image:url(bilder/superhelden-filme.jpg);*/
+
+}
+
+h2 {
+	padding:30px;
+	color:#F89A01;
+}
+
+p {
+	font-size:14px;
+	color:#DCDCDC;
+}
+
+.float {
+	float:left;
+	margin-right:20px;
+}
+
+.floatstop {
+	clear:both;
+}
+
+#footer {
+	height:200px;
+	bottom:0px;
+	background-repeat:no-repeat;
+	background-image:url(bilder/superhelden-filme.jpg);
+	background-color:#000000;
+}
+
+div#con {
+	width:800px;
+	margin:50px auto 50px auto;
+	padding:40px;
+	background-color:#000000;
+
+}
+
+/*=====================================*/
+
+ul#link {
+	margin:20px 50px auto 50px;
+	list-style:none;
+}
+
+ul#link li {
+	display:inline;
+	margin:15px;
+	padding:10px;
+	background-color:#F59902;  /*orange*/
+}
+/*letzter Listenpunkt ohne Abstand nach rechts:*/
+ul.link li.letzter {
+	margin-right:0px;
+}
+
+ul#link li a {
+	padding:5px;
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+
+ul#link li a:hover {
+	color:#FFFFFF;
+	background-color:#F80105;/*rot*/
+}
+
+ul#link li a.active {
+	cursor:default;
+	color:#FFFFFF;
+	background-color:#A5A5A5;/*grau*/
+}
+	
+/*========================================*/
+
+ul.navi {
+	float:left;
+	width:200px;   
+	margin:20px auto 20px auto;
+	padding:10px;
+	list-style:none;
+	/*background-color:#F8D9D9;*/
+}
+
+ul.navi li a {
+	font-size:12px;
+	color:#F1A707;
+	/*text-decoration:none;*/
+}
+
+/*========================================*/
+ div#content {
+	
+	 width:600px;
+	 margin:20px 20px 20px 220px;
+	 background-color:#000000;
+	
+ }
+	
+/*========================================*/
+
+
+
+/*========================================*/

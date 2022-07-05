@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:"Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	font-size:20px;
+}
+
+h1 {
+	margin-bottom:30px;
+	font-size:60px;
+	text-align:center;
+	color:#0CB4FB;
+}
+
+div#container {
+	margin:20px auto;
+	width:990px;
+	min-width:200px;
+	padding:20px;
+	background-image:url(bilder/hintergrund.png);
+	background-color:#97D7F7;
+}
+/*navi vertikal*/
+
+ul#navi1 {
+	width:340px;
+	list-style:none;
+}
+
+ul#navi1 li a {
+	display:block;
+	padding:10px;
+	text-decoration:none;
+	color:#000000;
+	background-color:#69F559;
+}
+
+ul#navi1 li a:hover {
+	margin-left:15px;
+	width:340px;
+	color:#FFFFFF;
+	border-radius:5px;
+	background-color:#041E9A;
+	cursor:crosshair;
+}
+
+ul#navi1 li a.aktivlink {
+	margin:auto;
+	width:auto;
+	border-radius:0px;
+	cursor:default;
+	color:#FFFFFF;
+	background-color:#010101;
+}
+
+div#fisch {
+	width:183px;
+	height:275px;
+	position:fixed;
+	top:200px;
+	right:200px;
+	/*background-color:#D41114;*/
+	background-image:url(bilder/im_glas.png);
+	background-repeat:no-repeat;
+}
+

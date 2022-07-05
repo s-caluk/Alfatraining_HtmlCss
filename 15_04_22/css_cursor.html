@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS cursor</title>
+
+<style type="text/css">
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica,  sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#DB3033;
+}
+ 
+ p {
+	 width:250px;
+	 height:140px;
+	 background-color:#C7EDF8;
+ }
+ 
+/* Klassen fuer verschiedene Mauszeiger*/
+
+.default {
+	cursor:default;
+}
+
+.pointer {
+	cursor:pointer;
+}
+
+.wait {
+	cursor:wait;
+}
+
+.help {
+	cursor:help;
+}
+
+.move {
+	cursor:move;
+}
+
+.crosshair {
+	cursor:crosshair;
+}
+
+.bild-santa {
+	cursor:url(bilder/santa.gif),move;
+}
+
+.bild-schmetterling {
+	cursor:url(bilder/schmetterling.cur),none;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<h1>CSS cursor</h1>
+
+<h2>Aussehen des Mauszeigers bestimmen</h2>
+
+<p class="default">normaler Mauszeiger:default</p>
+
+<p class="pointer">Mauszeiger:pointer</p>
+
+<p class="wait">Mauszeiger:wait</p>
+
+<p class="help">Mauszeiger:help</p>
+
+<p class="move">Mauszeiger:move</p>
+
+<p class="crosshair">Mauszeiger:crosshair</p>
+
+<p class="bild-santa">Mauszeiger: mit Bild</p>
+
+<p class="bild-schmetterling">Mauszeiger: mit Bild</p>
+
+</body>
+</html>

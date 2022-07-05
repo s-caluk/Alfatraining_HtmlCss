@@ -1,0 +1,5 @@
+# das ist meine Datei robots.txt (und dies ist ein Kommentar)
+
+User-agent: *
+Disallow: /kunden/
+Disallow: /news.html

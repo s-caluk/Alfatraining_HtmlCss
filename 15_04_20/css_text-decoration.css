@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#0ECC4D;
+}
+
+a {
+	text-decoration:none;
+	font-weight:bold;
+	color:#19D534;
+}
+
+p.unterstrichen {
+	text-decoration:underline;
+}
+p.ueberstrichen {
+	text-decoration:overline;
+}
+p.durchstrichen {
+	text-decoration:line-through;
+}
+p.blinkend {
+	text-decoration:blink;
+}

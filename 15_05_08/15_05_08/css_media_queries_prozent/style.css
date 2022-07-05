@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	/*background-color:#E8FF00;*/
+}
+
+h2 {
+	margin-bottom:20px;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+img {
+	width:100%;
+}
+
+div#container {
+	margin:20px auto;
+	/*width:990px;*/
+	width:82%;  /*damit genug Platz fuer den Text der Listenpunkte ist (langer Verweis 2)*/
+	/*min-width:200px;*/
+	/*padding:20px 2% 20px 2%;*/  /*hier veraendern sich linker+rechter Rand*/
+	padding:20px;  /*sieht besser aus mit gleichmaessigem padding-Rand*/
+	background-color:#9F4FF8;  /*violett*/
+}
+
+ul#navi {
+	/*float:left;
+	width:100%;*/       /*Moeglichkeit 1: float + Breite (Pflichtangabe bei float)*/
+	/*height:50px;*/    /*Moeglichkeit 2: feste Hoehe*/
+	margin-bottom:20px;
+	overflow:auto;   /* Moeglichkeit 3: damit passt sich die ul von der Hoeher her an ihre Kind-Elemente an, OBWOHL diese auf der Ebene float liegen und sich ul im n.E. befindet*/
+	list-style:none;
+	background-color:#F0FF00;
+}
+
+ul#navi li {
+	float:left;
+	width:15%;    /*15% x 6 Listenpunkte = 90%*/
+	margin-right:2%;  /*5x Abstand von 2% = 10% ...insgesamt 100% meiner Liste*/
+	background-color:#11A414;
+}
+
+ul#navi li.letzter {
+	margin-right:0;
+}
+
+ul#navi li a {
+	display:block;
+	padding:5px 4% 5px 4%;
+	text-decoration:none;
+	/*text-align:center;*/
+	color:#000000;
+	background-color:#93DAFD;
+}
+
+ul#navi li a:hover {
+	color:#FFFFFF;
+	background-color:#0E16A2;
+}
+
+p.textbox {
+	float:left;
+	width:135px;
+	margin:15px;
+	background-color:#C9C9C9;
+}
+
+
+
+/*Medienabfrage fuer Tablet*/
+@media screen and (min-width:580px) and (max-width:1090px){
+	div#container {
+		/*width:500px;*/   /*geerbt wird 82% Breite aus dem allgemenen style*/
+		background-color:#FB5847;  /*rot*/
+	}
+	
+	ul#navi li {
+		width:32%;  /*32% x 3 Listenpunke = 96%, 2x margin-right der li = 4%, gesamt 100%*/
+		margin-bottom:10px;
+	}
+	
+	/*neu hinzugefuegte Klasse, die nur im Bereich Tablet gilt*/
+	ul#navi li.last_tablet {
+		margin-right:0;
+	}
+			
+}
+
+/*Medienabfrage fuer Handy*/
+@media screen and (min-width:200px) and (max-width:579px){
+	div#container {
+		/*width:200px;*/
+		background-color:#5C69FD;  /*blau*/
+	}
+	
+	ul#navi li {
+		width:auto;   /*geerbte Breite von 15% aufheben*/
+		float:none;   /*floaten aufheben*/
+		margin-right:0;  /*margin-right von 2% aufheben*/
+		margin-bottom:10px;
+	}
+	
+	ul#navi li a {
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+		
+	p.textbox {
+		float:none;  /*geerbte float-Eigenschaft der Box wieder aufheben*/
+		width:auto;  /*geerbte Breite von 135px wieder auf automatische Ausdehnung setzen, d.h. den Standard, wie bei jedem Block-Element*/
+		margin:0px 0px 15px 0px;
+	}
+}

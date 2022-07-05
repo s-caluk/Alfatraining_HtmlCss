@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML Listen</title>
+</head>
+<body>
+<h1>HTML Listen</h1>
+<h2>ul (unordered list) Aufzählungsliste </h2>
+<h3>Kleinst mögliche Liste:</h3>
+<ul>
+	<li>Listenpunkt</li>
+</ul>
+ <h3>Liste mit 3 Listenpunkten:</h3>
+<ul>
+	<li>Listenpunkt</li>
+	<li>Listenpunkt</li>
+	<li>Listenpunkt</li>
+</ul>
+
+<p> Wie das Bullet (Listenpunkt) dargestellt wird, bestimmt der Browser. 
+Aussehen und Einrückungen lassen sich später individuell über CSS gestalten.<br>
+Es ist auch möglich, Listen zu verschachteln: </p>
+
+<ul>
+	<li>Listenpunkt 1</li>
+	<li>Listenpunkt 2</li>
+	<li>Listenpunkt 3
+		<ul>
+			<li>Listenpunkt 3.1</li>
+			<li>Listenpunkt 3.2
+				<ul>
+					<li>Listenpunkt 3.2.1</li>
+					<li>Listenpunkt 3.2.2
+						<ul>
+							<li>Listenpunkt 3.2.2.a</li>
+							<li>Listenpunkt 3.2.2.b</li>
+						</ul>
+					</li>
+					<li>Listenpunkt 3.2.3</li>
+					<li>Listenpunkt 3.2.4</li>
+				</ul>
+			</li>
+			<li>Listenpunkt 3.3</li>
+			<li>Listenpunkt 3.4</li>
+		</ul>
+	
+	</li>
+	<li>Listenpunkt 4</li>
+	<li>Listenpunkt 5</li>
+	<li>Listenpunkt 6</li>
+	<li>Listenpunkt 7 mit <em> wichtigem Text </em> </li>
+	<li>Listenpunkt 8</li>
+</ul>
+<hr>
+
+<h2>ol(ordered list) Nummerierte Liste </h2>
+<p> Bei dieser Liste werden die Einträge durchnummeriert.
+Die Nummerierung erfolg dabei automatisch und fortlaufend.</p>
+
+<ol>
+	<li>Listenpunkt</li>
+	<li>Listenpunkt</li>
+	<li>Listenpunkt
+		<ol>
+			<li>Listenpunkt</li>
+			<li>Listenpunkt
+				<ul>
+					<li>Listenpunkt</li>
+					<li>Listenpunkt</li>
+					<li>Listenpunkt</li>
+					<li>Listenpunkt</li>
+				</ul>
+			</li>
+			<li>Listenpunkt</li>
+		</ol>
+	</li>
+	<li>Listenpunkt</li>
+	<li>Listenpunkt</li>
+	<li>Listenpunkt</li>
+	<li>Listenpunkt</li>
+	<li>Listenpunkt</li>
+	<li>Listenpunkt</li>
+	<li>Listenpunkt</li>
+</ol>
+
+<p> Alle Listentypen lassen sich beliebig ineinander verschachteln. </p>
+
+<hr>
+
+<h2> dl (definition list) Definitionsliste </h2>
+
+<p> Definitionslisten bestehen aus 2 teilen: Einem Definitionsterm (dt) und einer,
+ oder mehreren Beschreibungen (dd).</p>
+ <p> Die Abfolge von dt- und dd-Elementen innerhalb einer dl-Liste ist nicht streng geregelt,
+ jedoch muss mindestens ein dt-Element vorhanden sein.</p>
+ 
+ <dl>
+	<dt>Definitionsterm</dt>
+	<dd>Beschreibung oder Erläuterung</dd>
+ </dl>
+<p>Definitionslisten eigenen sich besonders für Glossare, d.h. Paare von Wörtern und deren Erklärung.
+Sie bestehen aus einem definierten Ausdruck, z.B. einem Fachbegriff, welcher dann eine oder mehrere 
+Beschreibungen besitzt (Lexkika,Duden,...). Auch für Bildergalerien lassen sich Definitionslisten prima verwenden,
+mit dem dt-tag als Bild und dem dd-tag als Bildunterschrift.</p>
+
+<dl>
+	<dt>Blume</dt>
+	<dd>Blühende Pflanze
+			<dl>
+				<dt>Frühblüher</dt>
+				<dd>Schneeglöckchen</dd>
+				<dd>Krokus</dd>
+				<dd>Osterglocke</dd>
+				
+				<dt>Spätblüher</dt>
+				<dd>Pfingsrose</dd>
+				<dd>Lilie</dd>
+				
+			</dl>
+		</dd>
+	<dd>Bürzel bei einem Hasen</dd>
+	<dd>Schaumkrone auf dem Bier</dd>
+	<dd>Geschmack eines Weines</dd>
+	<dd>Eisblume am Fenster</dd>
+	
+	<dt>Krone</dt>
+	<dd>Deckel der Bierflasche</dd>
+	<dd>Wärungseinheit
+		<ul>
+			<li>Dänemark</li>
+			<li>Schweden</li>
+			<li>Tschechien</li>
+		</ul>
+	</dd>
+	<dd>Baumkrone</dd>
+	<dd>Zahnkrone</dd>
+	<dd>Krone eines Königs</dd>
+</dl>
+<p> Definitionslisten lassen sich ebenfalls verschachteln. Dadurch können baumartige Strukturen dargestelt 
+werden. Innere Listen müssen <strong> innerhalb des dd-Elements </string> notiert werden.</p>
+</body>
+</head>

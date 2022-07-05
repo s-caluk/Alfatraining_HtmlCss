@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+	background-image:url(bilder/bsp2.png);
+	background-color:#22632F;
+}
+
+h1 {
+	font-family:Georgia, Constantia, "Lucida Bright", "DejaVu Serif", serif;
+	color:#350797;
+	font-size: 48px;
+	text-align:center;
+}
+
+h2 {
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color:#FF9600;	
+}
+/*================================*/
+
+p {
+	width:900px;
+	height:300px;
+	color:#FFFFFF;  /*weiss*/
+	background-color:#350797;
+}
+
+.bildreihe {
+	background-image:url(bilder/bsp3.png);
+	background-repeat:repeat-x;
+	
+}
+.bildspalte {
+	background-image:url(bilder/bsp4.png);
+	background-repeat:repeat-y;
+}

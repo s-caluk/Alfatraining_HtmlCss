@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#818181;
+}
+
+h2.besser {
+	width:250px;
+	color:#EF191C; /*rot*/
+	background-color:#EDF390; /*gelb*/
+}
+
+h2.optimal {
+	width:221px;
+	height:181px;
+	text-indent:-9999px;
+	background-image:url(bilder/headline.gif);
+}

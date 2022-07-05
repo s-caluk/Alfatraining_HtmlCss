@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+
+	background-color:#DDF2F6;
+}
+
+h1 {
+	color:#8D0BEF;
+	background-color:#FBEEFF;
+}
+
+strong {	
+	color:#FB1014;
+	background-color:#F0F8B5;
+}

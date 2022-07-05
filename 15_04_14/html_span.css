@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+}
+
+h1 {
+	color:#3F08F8;
+}
+
+span {
+	color:#D70508;
+}
+
+p span {
+	background-color:#F1EEA4;
+}

@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}  
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+	color:#FFFFFF;  /*weiss*/
+	background-color:#272727;   /*dunkelgrau*/
+}
+
+h1 {
+	margin-bottom:30px;
+}
+
+h2 {
+	margin-bottom:20px;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+a {
+	color:#FFFFFF;  /*weiss*/
+}
+
+div#container {
+	margin:20px auto;
+	width:800px;
+	padding:20px;
+	border:20px solid #FFFFFF;  /*weiss*/
+}
+
+ul#navi {
+	margin-left:40px;
+	margin-bottom:20px;
+}
+
+div#merkbox {
+	padding:20px;
+	border:2px solid #F0FF00;
+	margin:0px 100px 50px 100px;
+	font-family:"Courier New", Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, monospace;
+}
+
+div#merkbox strong {
+	color:#FF380B;
+}

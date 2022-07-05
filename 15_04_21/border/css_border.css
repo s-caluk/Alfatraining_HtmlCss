@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	color:#5F5F5F;
+}
+
+h2 {
+	width:400px;
+	border-bottom:15px dotted #17B158;
+}
+
+p {
+	width:300px;
+	height:200px;
+	background-color:#EEECEC;
+}
+
+/*zusammenfassende Schreibweise, alle 4 Seiten gleich:
+staerke der Umrandung in px - Art der Umrandung - Farbe der Umrandung*/
+p.umrandung1 {
+	border:40px solid #14C5C8;
+}
+
+p.umrandung2 {
+	border-top:20px dotted #17B12D;
+	border-right:45px groove #B409B8;
+	border-bottom:10px dashed #0A26A8;
+	border-left:150px ridge #B80C0F;
+}
+

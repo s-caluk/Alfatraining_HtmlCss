@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HTML Tabellen &ndash; Übungsdatei</title>
+</head>
+<body>
+
+<h1>HTML Tabellen &ndash; Übungsdatei</h1>
+
+<table border="1">
+	<tr>
+    	<td>Inhalt der Tabellenzelle</td>
+    </tr>
+</table>
+
+<p>Tabelle mit 3 Spalten:</p>
+
+<table border="1">
+	<tr>
+    	<th>Überschrift Spalte 1</th>
+        <th>Überschrift Spalte 2</th>
+        <th>Überschrift Spalte 3</th>
+    </tr>
+    
+    <tr>
+    	<td>Daten 1.1</td>
+        <td>Daten 2.1</td>
+        <td>Daten 3.1</td>
+    </tr>
+    
+    <tr>
+    	<td>Daten 1.2</td>
+        <td>Daten 2.2</td>
+        <td>Daten 3.2</td>
+    </tr>
+    
+    <tr>
+    	<td>Daten 1.3</td>
+        <td>Daten 2.3</td>
+        <td>Daten 3.3</td>
+    </tr>
+</table>
+
+<p>Zellen verbinden: colspan und rowspan</p>
+
+<table border="1">
+	<!--Reihe 1-->
+	<tr>
+    	<td colspan="2">Otto</td>
+        <!--<td>Karl</td>-->
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+    </tr>
+    
+    <!--Reihe 2-->
+	<tr>
+    	<td>Zelle</td>
+        <td>Zelle</td>
+        <td>Zelle</td>
+        <td colspan="3" rowspan="4">Frieda</td>
+        <!--<td>Maria</td>-->
+        <!--<td>Ilse</td>-->
+    </tr>
+    
+    <!--Reihe 3-->
+	<tr>
+    	<td>Zelle</td>
+        <td rowspan="3">Fritz</td>
+        <td>Zelle</td>
+        <!--<td>Eva</td>
+        <td>Ella</td>
+        <td>Ulla</td>-->
+    </tr>
+    
+    <!--Reihe 4-->
+	<tr>
+    	<td>Zelle</td>
+        <!--<td>Franz</td>-->
+        <td>Zelle</td>
+        <!--<td>Erika</td>
+        <td>Jana</td>
+        <td>Anna</td>-->
+    </tr>
+    
+    <!--Reihe 5-->
+	<tr>
+    	<td>Zelle</td>
+        <!--<td>Sepp</td>-->
+        <td>Zelle</td>
+        <!--<td>Susi</td>
+        <td>Sanna</td>
+        <td>Sonni</td>-->
+    </tr>
+</table>
+
+</body>
+</html>

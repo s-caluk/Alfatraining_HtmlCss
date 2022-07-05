@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size:20px;
+	background-image:url(bilder/bg.jpg);
+}
+
+h1 {
+	margin-bottom:50px;
+	padding-top:20px;
+	font-size:4em;
+	color:#FFFFFF;
+}
+
+p {
+	margin-bottom:30px;
+}
+
+span {
+	color:#FC0004;
+}
+
+a {
+	text-decoration:none;
+	color:#F8F8F8;
+}
+	
+div#container {
+	width:1000px;
+	margin:20px auto;
+	padding:20px;
+	color:#FFFFFF;
+	background-color:#000000;
+}
+
+div#content {
+	width:900px;
+	margin:20px auto;
+	background-color:#000000;
+}
+
+div#rechte_spalte {
+	float:right;
+	width:250px;
+	height:250px;
+	margin:10px;
+	padding:15px;
+	background-color:#4F4F4F;
+}
+
+ul#navi {
+	margin-bottom:50px;
+	text-align:center;
+	font-variant:small-caps;
+	font-size:2em;
+}
+
+ul#navi li {
+	display:inline;
+	padding-left:20px;
+	padding-right:20px;
+	background-color:#E75218;
+	list-style:none;
+	
+}	
+
+p#footer.floatstop {
+	margin:50px;
+	clear:both;
+}
+
+p#stoerer {
+	position:fixed;
+	top:50px;
+	right:20px;
+	z-index:5;
+	width:183px;
+	height:149px;
+	text-indent:-9999px;
+	background-image:url(bilder/stoerer.png);
+	}
+	
+p#kippe {
+	position:fixed;
+	top:600px;
+	left:20px;
+	width:420px;
+	height:260px;
+	text-indent:-9999px;
+	background-image:url(bilder/kippe.png);
+	}
+	
+p#hand {
+	position:fixed;
+	top:600px;
+	right:0;
+	width:450px;
+	height:280px;
+	text-indent:-9999px;
+	background-image:url(bilder/hand.png);
+	}
+	

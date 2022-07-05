@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	margin-bottom:60px;
+	font-size:78px;
+	text-align:center;
+	color:#E10003;
+}
+
+p {
+	padding:40px;
+	/*	background-color:#B7B2B2;*/
+}
+
+div#container {
+	margin:20px auto;
+	width:800px;
+	border:2px solid #0A0000;
+}
+	
+
+ul#navi {
+	float:left;
+	width:120px;
+	margin:20px;
+	list-style:none;
+/*	background-color:#E9E5B0;*/
+}
+
+ul#navi li {
+	position:relative;
+	float:left;
+	width:120px;
+	height:105px;
+	margin:2px;
+/*	background-color:#E5A9F5;*/
+	
+}
+
+ul#navi li a {
+	display:block;
+	height:inherit;
+	text-indent:-9999px;
+	text-decoration:none;
+	background-color:#B9FDB4;
+}
+
+ul#navi li a.eins {
+	background-image:url(bilder/messer2.jpg);
+}
+
+
+/*ul#navi li a span {
+	display:none;
+	position:absolute;
+	z-index:1;
+	width:600px;
+	top:200px;
+	left:300px;
+	background-color:#E01619;
+}
+
+
+ul#navi li a:hover span {
+	display:block;
+}*/
+	
+	
+ul#navi li a.zwei {
+	background-image:url(bilder/op.jpg);
+}
+	
+	
+ul#navi li a.drei {
+	background-image:url(bilder/rambo.jpg);
+}
+	
+	
+ul#navi li a.vier {
+	background-image:url(bilder/machete.jpg);
+}
+
+.floatstop {
+	text-align:center;
+	clear:both;   /*beendet das Umfliessen*/
+}

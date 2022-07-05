@@ -1,0 +1,130 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+	background-image:url(bilder/bmw_m3_1.jpg);
+}
+
+h1 {
+	height:40px;
+	margin:20px 30px 40px 30px;
+	padding-left:10px;
+	text-align:center;
+	color:#FFFFFF;
+}
+
+h2 {
+	margin:20px 30px 20px 30px;
+	text-align:center;
+	padding-left:10px;
+	height:40px;
+	color:#FFFFFF;
+}
+
+h3 {
+	margin:20px 30px 20px 30px;
+	font-size:18px;
+	color:#000000;
+}
+
+
+div#container {
+	position:relative;
+	margin:30px auto;
+	width:900px;
+	border:2px solid #000000;
+}
+
+div#content {
+	width:570px;
+	margin-left:80px;
+	margin-bottom:50px;
+	padding:30px;
+	border-left:2px solid #FFFFFF;
+	border-right:2px solid #FFFFFF;
+	background-color:#E5E5E5;
+}
+
+div#content p {
+	margin-bottom:20px;
+	text-align:justify;
+}
+
+
+div#bildbox {
+	width:230px;
+	height:230px;
+	background-color:#FF0004;
+}
+
+ul li {
+	list-style:none;
+}
+
+/*---------Hauptnavigation---------*/
+
+ul#navi {
+	height:25px;
+	margin:0px 50px 20px 50px;
+	padding:10px;
+	/*background-color:#D5D0D0;*/
+}
+
+ul#navi li {
+	float:left;
+	width:168px;
+	height:40px;
+	/*background-color:#FB6308;*/
+}
+
+ul#navi li a {
+	padding:10px 0px;
+	display:block;
+	text-decoration:none;
+	text-align:center;
+	color:#FFFFFF;
+	background-color:#E00003;
+}
+
+ul#navi li a:hover {
+	color:#E00003;
+	background-color:#FFFFFF;
+}
+
+/*-----Aktivlink---------*/
+ul#navi li a.aktivlink {
+	cursor:default;	/*Mauszeiger als Pfeil*/
+	color:#FFFFFF;
+	background-color:#E00003;
+}
+
+
+/*------liste mit Bilder-----*/
+
+ul.bild li {
+	float:left;
+	width:75px;
+	height:56px;
+	margin-left:80px;
+	margin-right:10px;
+	margin-bottom:30px;
+	color:#ED1115;
+	background-color:#FB0A0E;
+}
+
+ul.bild li a {
+	display:block;
+	width:75px;	
+	background-color:#FF0004;
+}
+
+ul.bild li a:hover {
+	background-color:#000000;
+}

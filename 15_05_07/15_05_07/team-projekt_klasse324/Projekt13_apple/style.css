@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Helvetica, Gotham, "Helvetica Neue", Arial, sans-serif;
+	font-size:16px;
+	background-image:url(bilder/bg.png);
+}
+
+/*		Farbe zum Testen ob Style verknüpft ist*/
+h1 {
+	margin-bottom:50px;
+	text-align:center;
+	color:#000000;
+}
+
+h2 {
+	margin-bottom:10px;
+}
+
+h3 {
+	margin-bottom:30px;
+}
+
+p {
+	color:#4B4B4B;
+}
+
+a {
+	text-decoration:none;
+	color:#FFFFFF;
+}
+
+p strong {
+}
+
+div#container {
+	width:700px;
+	margin:20px auto;
+	padding:20px;
+}
+
+ul#navi {
+	height:30px;
+	margin-bottom:40px;
+	list-style:none;
+}
+
+ul#navi li{
+	float: left;
+	width: 160px;
+	border-radius:20px;
+	margin-left:10px;
+	background-color:#4D4D4D;
+}
+
+ul#navi li a {
+	display:block;
+	padding:5px;
+	text-decoration:none;
+	text-align:center;
+	font-weight:bold;
+	color:#FFFFFF;
+}
+
+ul#navi li a:hover {
+	color:#462700;
+	background-color:#FFFFFF;
+}
+
+img {
+	float:left;
+}
+
+p.produkt {
+	margin-bottom:80px;
+}
+
+hr {
+	margin-bottom:50px;
+}
+

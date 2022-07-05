@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kontakt Formulare</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div id="conteiner">
+
+    <div id="head">
+    
+        <h1>Kontakt Formulare</h1>
+    
+    </div>
+    
+    <ul id="navi">
+        <li><a href="#">Kontakt Formular 1</a></li>
+        <li><a href="#">Kontakt Formular 2</a></li>
+        <li><a href="#">Kontakt Formular 3</a></li>
+        <li><a href="#">Kontakt Formular 4</a></li>
+        <li><a href="#">Kontakt Formular 5</a></li>
+        <li><a href="#">Kontakt Formular 6</a></li>
+        <li><a href="#">Kontakt Formular 7</a></li>
+        <li><a href="#">Kontakt Formular 8</a></li>
+        <li><a href="#">Kontakt Formular 9</a></li>
+        <li><a href="#">Kontakt Formular 10</a></li>
+    </ul>
+    
+    <div id="rechts">
+    
+    	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    
+    </div>
+    
+    <form action="meinscript.php" method="post" name="kontaktformular">
+		  <fieldset>
+          	<legend>Ihre Adressendaten:</legend>        
+                
+            <p>
+            
+                <label for="anrede">Bitte Anrede auswählen:</label>
+                
+                <!--auswahlliste-->
+                <select name="anrede" id="anrede">
+                    <option>Herr</option>
+                    <option>Frau</option>
+                </select>
+            </p>
+            
+            <p>
+                <label for="vorname">Vorname: </label>
+                <!--Einzeiliger Eingabebereich-->
+                <input type="text" name="vorname" id="vorname">    
+            </p>
+            
+            <p>
+                <label for="nachname">Nachname:</label>
+                <input type="text" name="nachname" id="nachname">    
+            </p>
+            
+            <p>
+                <label for="strasse">Strasse und Hausnummer:</label>
+                <input type="text" name="strasse" id="strasse">    
+            </p>
+            
+            <p>
+                <label for="plz">Postleitzahl:</label>
+                <input type="text" name="plz" id="plz">    
+            </p>
+            
+            <p>
+                <label for="ort">Ort:</label>
+                <input type="text" name="ort" id="ort">    
+            </p>
+            
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email">    
+            </p>
+            
+             <p>
+             
+        	<label for="nachricht">Platz für ihre Nachricht </label>
+            
+            <textarea name="nachricht" id="nachricht">*</textarea>
+        
+       		 </p>
+            
+    	</fieldset>
+                
+       	<p><input type="submit" value="Senden" name="absenden"></p>
+   
+  		<p><input type="reset" value="Löschen" name="loeschen"></p>
+    
+    </form>
+    
+    <div id="footer">
+    <p>footer</p>    
+    </div>
+
+
+
+</div>
+</body>
+</html>

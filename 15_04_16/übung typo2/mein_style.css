@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	background-color:#AEF0F5;
+	font-size:16px;
+}
+
+h1 {
+	font-family:Georgia, Constantia, "Lucida Bright", "DejaVu Serif", serif;
+	color:#F7060A;
+	background-color:#6B6B6B;
+	font-size: 48px;
+	text-align:center;
+}
+
+h2 {
+	font-family:Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+	color:#FF9600;	
+}
+
+span {
+	color:#2A1690
+}
+p span{
+	font-size:3em;
+	color:#EB1216;
+}
+/*==============================================*/
+p.block {
+	width:500px;
+	text-align:justify;
+	background-color:#FCF5CB;
+}
+p.block2 {
+	width:800px;
+	text-align:justify;
+	background-color:#F059F4;
+}
+.zentriert {
+	text-align:center;
+}
+
+p.links {
+	text-align:left;
+}
+
+p.zentriert {
+	text-align:center;
+}
+
+p.rechts {
+	text-align:right;
+}
+
+/*================================================*/
+
+.kursiv {
+	font-style:italic;
+}
+
+p.gross {
+	text-transform:uppercase;
+	background-color:#FBF9F9;
+}
+
+p.indent100px {
+	text-indent:100px;
+}
+
+p.big {
+	font-variant:small-caps;
+	background-color:#E4D1D1;
+}
+
+/*===============================================*/
+
+li {
+	color:#616161; 
+}
+
+ul {
+	color:#D71619; 
+	background-color:#F7D697;
+}
+
+ul li ol {
+	color:#D71619; 
+	background-color:#FDB356;
+}

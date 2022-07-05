@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CSS float 5</title>
+<style type="text/css">
+/*alle automatischen Abstande des Browsers auf NULL setzen:*/
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family:Arial, "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, sans-serif;
+	font-size:16px;
+}
+
+h1 {
+	margin-bottom:20px;
+	background-color:#FFC600;
+}
+
+p {
+	margin-bottom:20px;
+}
+
+div#container {
+	margin:20px auto;
+	width:800px;
+	padding:20px 20px 0px 20px;
+	border:2px solid #A011FF;
+}
+
+ul#navi {
+	float:left;
+	width:200px;   /*feste Breite ist bei float = Pflicht*/
+	margin-bottom:20px;   /*falls die Navi einmal mehr Hoehe hat, als der Content und den Footer nach unten schieben muss*/
+	list-style:none;  /*Listenaussehen entfernen*/
+	background-color:#C513C9;
+}
+
+div#content {
+	padding:10px;
+	margin-left:220px;
+	margin-bottom:20px;
+	background-color:#8CF872;
+}
+
+p#footer {
+	background-color:#609CEC;
+}
+
+.floatstop {
+	clear:both;   /*beendet das Umfliessen*/
+}
+
+</style>
+</head>
+<body>
+
+<div id="container">
+
+    <h1>CSS float 5</h1>
+    
+    <ul id="navi">
+    	<li><a href="#">Verweis 1</a></li>
+        <li><a href="#">Verweis 2</a></li>
+        <li><a href="#">Verweis 3</a></li>
+        <li><a href="#">Verweis 4</a></li>
+        <li><a href="#">Verweis 5</a></li>
+        <li><a href="#">Verweis 6</a></li>
+        <li><a href="#">Verweis 7</a></li>
+    </ul>
+    
+    <div id="content">
+    
+        <h2>Dies ist mein Inhalts-Bereich</h2>
+        
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor inviduerat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    </div>  <!--Ende div#content-->
+   
+    <p id="footer" class="floatstop">Ich bin der Fussbereich!</p>
+    
+</div>
+
+</body>
+</html>
